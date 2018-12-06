@@ -32,11 +32,6 @@ var doughnutChart = document.getElementById("favService").getContext('2d');
       responsive: true,
       title: {
             display: false,
-            // fontColor: '#414141',
-            // fontFamily: "'Halyard Display', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
-            // fontSize: 18,
-            // fontStyle: '500',
-            // text: 'Currently Used Services'
         }
     }
 });
@@ -83,11 +78,6 @@ var barChart = document.getElementById("bestFeatures").getContext('2d');
 
        title: {
              display: false,
-             // fontColor: '#414141',
-             // fontFamily: "'Halyard Display', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
-             // fontSize: 18,
-             // fontStyle: '500',
-             // text: 'Most Useful Features'
          }
    }
 });

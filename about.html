@@ -17,133 +17,166 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   </head>
   <body>
-  <div class="wrapper">
+  <div class="container load_cont">
     <header>
-        <!-- Nav -->
-        <nav class="navbar">
-            <a href="index.html" class="logo"><img src="images/logo_dark_m.png"></a>
-            <div class="menu">
-              <a href="#">Menu</a>
-            </div>
-            <div class="exp_menu">
-              <ul class="menu_links">
-                <li><a href="index.html#work">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="mailto:caseyfawcett@gmail.com">Contact</a></li>
-              </ul>
-            </div>
-        </nav>
-        <div class="hero">
-          <div>
-            <div>
-              <img src="images/casey_fawcett_m.jpg">
-            </div>
-            <div class="hero_btns">
-                <a href="mailto:caseyfawcett@gmail.com" class"btn_primary">Say hello!</a>
-            </div>
+      <div id="menu_links">
+        <div class="menu_content" id="slideMenu">
+          <div class="menu_navbar">
+            <a href="index.html" class="logo"><img src="images/logo_white_m.png"></a>
+            <button id="close_nav" onclick="closeNavMenu()" class="closebtn">x</button>
+          </div>
+          <ul class="menu_nav_links">
+            <li><a href="index.html#work" onclick="closeNavMenu()">WORK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="https://drive.google.com/file/d/1g1wevkK2bHBMXhWv-EJYvY8x9JPFa3S7/view?usp=sharing">RESUME</a></li>
+            <li><a href="mailto:caseyfawcett@gmail.com">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Nav -->
+    <nav class="navbar">
+      <ul>
+        <li class="nav_logo">
+          <a href="index.html" class="logo"><img id="navlogo" src="images/logo_dark_m.svg"></a>
+        </li>
+        <li class="nav_menu" id="navmenu">
+          <button onclick="openNavMenu()" id="slidebtn" class="nav_menu_btn btn hmenu">Menu</button>
+        </li>
+        <li class="nav_expmenu">
+          <div class="exp_menu">
+            <ul>
+              <li><a href="index.html#work">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="https://drive.google.com/file/d/1g1wevkK2bHBMXhWv-EJYvY8x9JPFa3S7/view?usp=sharing">Resume</a></li>
+              <li><a href="mailto:caseyfawcett@gmail.com">Contact</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="main about">
+      <section class="hero2">
+        <!-- Hero -->
+        <div class="about_img">
+          <div class="portf_img"></div>
+        </div>
+        <!-- Intro -->
+        <div class="about_content">
+          <div class="inner_content">
             <h1>My Story</h1>
             <p class="description">I'm Casey Fawcett, a UX Designer with a background in architectural design.</p>
           </div>
         </div>
-    </header>
-    <div class="main">
+        <div class="btn_shell_proj">
+          <a href="mailto:caseyfawcett@gmail.com" class="btn btn_small primary_btn">Say hello!</a>
+        </div>
+        <div class="about_background"></div>
+      </section>
       <!--The Beginning -->
-      <div>
-        <div>
-          <h2>01 The Beginning</h2>
-          <p>Since I was a kid, I’ve had a pencil in my hand using my observations to help me understand how the world fits together.  In high school, I dreamed of becoming an animator and signed up for classes and spent all my breaks learning Photoshop, HTML, and C++.  A month before graduating, I was invited to an architectural critique of a series of projects proposing disaster relief housing built from shipping containers.  For the first time, I realized the impact design could have on people, and ended up changing my major from Computer Science to Architecture after my first year of college.</p>
-        </div>
-        <div>
+      <section class="beginning ab_grid grid section">
+        <div class="sub_sec beg_shell">
           <div>
-            <img src="images/about_pencil.jpg">
-          </div>
-          <div>
-            <img src="images/about_sketches.jpg">
+            <h2>01 The Beginning</h2>
+            <p>Since I was a kid, I’ve had a pencil in my hand using my observations to help me understand how the world fits together.  In high school, I dreamed of becoming an animator and signed up for classes and spent all my breaks learning Photoshop, HTML, and C++.  A month before graduating, I was invited to an architectural critique of a series of projects proposing disaster relief housing built from shipping containers.  For the first time, I realized the impact design could have on people, and ended up changing my major from Computer Science to Architecture after my first year of college.</p>
           </div>
         </div>
-        <div>
-          <p class="small">You can still find me sketching characters in my free time.</p>
-        </div>
-      </div>
-      <!--Power of Design -->
-      <div>
-        <div>
-          <h2>02 Power of Design</h2>
-          <p>While studying architecture,  I learned how to define problems, research, create solutions, and avoid gluing my fingers together.  Beyond that, I discovered keeping people at the center of the design process inspires innovative and valuable solutions. After graduating, I got a job as an architectural designer.  I was driven to use architecture to make the world better through intentional and responsible design decisions.</p>
-        </div>
-        <div>
-            <div>
-              <p class="quote">“Recognizing the need is the primary condition for design.”</p>
+        <div class="sketch_shell">
+          <div class="beg_img">
+            <div class"beg_left">
+              <img class="img_flx br" src="images/about_pencil.jpg">
             </div>
-            <div>
-              <p class="cite">— Charles Eames</p>
-            </div>
-        </div>
-      </div>
-      <!--Changing Direction -->
-      <div>
-        <div>
-          <h2>03 Changing Direction</h2>
-          <p>After moving, I took a break from work to design a few human beings.  In my spare time, I volunteered for visual design projects with local nonprofits and businesses.  While working with people, I would often get asked for help using outside apps or websites.  I began to see a pattern of people struggling to use technology with the potential to significantly improve their quality of life. I realized it was time for me to change my path and dive back into design. After a lot of research, I chose a Bloc apprenticeship to help me build my knowledge base and better understand the balance of the professional working environment.</p>
-        </div>
-        <div>
-          <div>
-            <img src="images/about_family.jpg">
-          </div>
-        </div>
-        <div>
-          <p class="small">A work in progress</p>
-        </div>
-      </div>
-      <!--Arrival-->
-      <div>
-        <div>
-          <h2>04 Arrival</h2>
-          <p>UX design is the perfect confluence between my ability to observe and empathize with people's needs and my drive to create simple working solutions. I see design as an opportunity to take a world fascinated by aesthetics and ensure it doesn't overlook the people it seeks to serve.</p>
-        </div>
-      </div>
-      <!--Other Things-->
-      <div>
-        <div>
-          <h2>Other Things I Love</h2>
-        </div>
-        <div>
-          <div>
-            <div>
-              <img src="images/about_tea_big.jpg">
-            </div>
-            <div>
-              <p>Drinking tea</p>
+            <div class"beg_right">
+              <img class="img_flx" src="images/about_sketches.jpg">
             </div>
           </div>
-          <div>
-            <div>
-              <img src="images/about_hiking_big.jpg">
-            </div>
-            <div>
-              <p>Hiking</p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img src="images/about_origami_big.jpg">
-            </div>
-            <div>
-              <p>Trying to fold orignami</p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img src="images/about_cake_big.jpg">
-            </div>
-            <div>
-              <p>Baking</p>
-            </div>
+          <div class="capt cent_capt">
+            <p>You can still find me sketching characters in my free time.</p>
           </div>
         </div>
 
-      </div>
+      </section>
+      <!--Power of Design -->
+      <section class="power ab_grid grid section">
+        <div class="sub_sec pow_shell">
+          <div>
+            <h2>02 Power of Design</h2>
+            <p>While studying architecture,  I learned how to define problems, research, create solutions, and avoid gluing my fingers together.  Beyond that, I discovered keeping people at the center of the design process inspires innovative and valuable solutions. After graduating, I got a job as an architectural designer.  I was driven to use architecture to make the world better through intentional and responsible design decisions.</p>
+          </div>
+        </div>
+        <div class="ab_quote">
+          <div class="ab_q_shell">
+            <div class="qt_content">
+              <p class="quote">“Recognizing the need is the primary condition for design.”</p>
+            </div>
+            <div class="qt_cite">
+              <p class="cite">— Charles Eames</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Changing Direction -->
+      <section class="change_dir ab_grid grid section">
+        <div class="sub_sec ch_dr_shell">
+          <div>
+            <h2>03 Changing Direction</h2>
+            <p>After moving, I took a break from work to design a few human beings.  In my spare time, I volunteered for visual design projects with local nonprofits and businesses.  While working with people, I would often get asked for help using outside apps or websites.  I began to see a pattern of people struggling to use technology with the potential to significantly improve their quality of life. I realized it was time for me to change my path and dive back into design. After a lot of research, I chose a Bloc apprenticeship to help me build my knowledge base and better understand the balance of the professional working environment.</p>
+          </div>
+        </div>
+        <div class="fam_img">
+          <div class="fam_img_shell">
+            <img class="img_flx" src="images/about_family.jpg">
+          </div>
+        </div>
+        <div class="ch_capt cent_capt">
+          <p>A work in progress</p>
+        </div>
+      </section>
+      <!--Arrival-->
+      <section class="arrival grid section">
+        <div class="sub_sec arr_shell">
+          <div>
+            <h2>04 Arrival</h2>
+            <p>UX design is the perfect confluence between my ability to observe and empathize with people's needs and my drive to create simple working solutions. I see design as an opportunity to take a world fascinated by aesthetics and ensure it doesn't overlook the people it seeks to serve.</p>
+          </div>
+        </div>
+      </section>
+      <!--Other Things-->
+      <section class="other_things section">
+        <div class="center">
+          <h2>Other Things I Love</h2>
+        </div>
+        <div class="other_grid">
+          <div class="o_top">
+            <div class="oi1">
+              <img class="img_flx" src="images/about_tea_big.jpg">
+              <div class="oc1 cent_capt">
+                <p>Drinking tea</p>
+              </div>
+            </div>
+            <div class="oi2">
+              <img class="img_flx" src="images/about_hiking_big.jpg">
+              <div class="oc2 cent_capt">
+                <p>Hiking</p>
+              </div>
+            </div>
+          </div>
+          <div class="o_bot">
+            <div class="oi3">
+              <img class="img_flx" src="images/about_origami_big.jpg">
+              <div class="oc3 cent_capt">
+                <p>Trying to fold origami</p>
+              </div>
+            </div>
+            <div class="oi4">
+              <img class="img_flx" src="images/about_cake_big.jpg">
+              <div class="oc4 cent_capt">
+                <p>Baking</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <!-- footer -->
     <footer>
@@ -168,5 +201,12 @@
         </div>
     </footer>
     </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/scrollmagic.js"></script>
+    <script src="js/nav.js"></script>
   </body>
 </html>
