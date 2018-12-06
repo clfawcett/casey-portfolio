@@ -25,7 +25,7 @@ $(document).ready(function(){
     triggerHook: 0
   })
   .setPin('#main-nav')
-  .addTo(controller);
+  .addTo(controller); 
 
   //loop through each .section element
   $('.section').each(function() {
