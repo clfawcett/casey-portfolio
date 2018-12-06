@@ -27,9 +27,6 @@ $(document).ready(function(){
   .setPin('#main-nav')
   .addTo(controller);
 
-  //loop through each .navbar element
-
-
   //loop through each .section element
   $('.section').each(function() {
 
