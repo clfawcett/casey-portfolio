@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   //init ScrollMagic
   var controller = new ScrollMagic.Controller();
 
@@ -11,6 +12,14 @@ $(document).ready(function(){
   .setPin('#top-head', {pushFollowers: false})
   .addTo(controller);
 
+  //pin the header again
+  var pinHeaderScene2 = new ScrollMagic.Scene({
+    triggerElement: '#main-nav',
+    triggerHook: .2
+  })
+  .setPin('#top-head', {pushFollowers: false})
+  .addTo(controller);
+
   //build background color scene
   var bgColorScene = new ScrollMagic.Scene({
     triggerElement: '#headbg p',
@@ -19,13 +28,25 @@ $(document).ready(function(){
   .setClassToggle('#headbg', 'bg-change')
   .addTo(controller);
 
-  //pin #main-nav to the top
-  var pinMainNavScene = new ScrollMagic.Scene ({
-    triggerElement: '#main-nav',
-    triggerHook: 0
-  })
-  .setPin('#main-nav')
-  .addTo(controller); 
+    //pin #main-nav to the top
+    var pinMainNavScene = new ScrollMagic.Scene ({
+      triggerElement: '#main-nav',
+      triggerHook: 0
+    })
+    .setPin('#main-nav')
+    .addIndicators({
+      name: 'sticky nav',
+    })
+    .addTo(controller);
+
+    // build fade in load
+    var fadeLoadScene = new ScrollMagic.Scene({
+      triggerElement: "#load",
+      triggerHook: 0
+    })
+    .setClassToggle('.load_cont', 'fade-in')
+    .addTo(controller);
+
 
   //loop through each .section element
   $('.section').each(function() {
@@ -75,11 +96,4 @@ $(document).ready(function(){
       .addTo(controller);
   })
 
-  // build fade in load
-  var fadeLoadScene = new ScrollMagic.Scene({
-    triggerElement: "#load",
-    triggerHook: 0
-  })
-  .setClassToggle('.load_cont', 'fade-in')
-  .addTo(controller);
 })

@@ -390,6 +390,7 @@ nav a {
   padding: 0 6.4vw;
 }
 
+
 .nav_expmenu {
   display: none;
 }
@@ -445,11 +446,6 @@ padding: 0 6.4vw;
   color: #3DA79A;
 }
 
-#subnav {
-  position: fixed;
-  width: 100%;
-  top:0;
-}
 
 
 /**********  main content  **********/
@@ -658,8 +654,6 @@ padding: 0 6.4vw;
   opacity: 1;
   transform: translateX(0);
 }
-
-
 
 .inner_content {
   padding: 0 6.4vw;
