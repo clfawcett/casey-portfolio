@@ -13,12 +13,12 @@ $(document).ready(function(){
   .addTo(controller);
 
   //pin the header again
-  var pinHeaderScene2 = new ScrollMagic.Scene({
-    triggerElement: '#main-nav',
-    triggerHook: .2
-  })
-  .setPin('#top-head', {pushFollowers: false})
-  .addTo(controller);
+  // var pinHeaderScene2 = new ScrollMagic.Scene({
+  //   triggerElement: '#work',
+  //   triggerHook: .2
+  // })
+  // .setPin('#top-head', {pushFollowers: false})
+  // .addTo(controller);
 
   //build background color scene
   var bgColorScene = new ScrollMagic.Scene({
@@ -28,24 +28,15 @@ $(document).ready(function(){
   .setClassToggle('#headbg', 'bg-change')
   .addTo(controller);
 
-    //pin #main-nav to the top
-    var pinMainNavScene = new ScrollMagic.Scene ({
-      triggerElement: '#main-nav',
-      triggerHook: 0
-    })
-    .setPin('#main-nav')
-    .addIndicators({
-      name: 'sticky nav',
-    })
-    .addTo(controller);
 
-    // build fade in load
-    var fadeLoadScene = new ScrollMagic.Scene({
-      triggerElement: "#load",
-      triggerHook: 0
-    })
-    .setClassToggle('.load_cont', 'fade-in')
-    .addTo(controller);
+  //pin #main-nav to the top
+  var pinMainNavScene = new ScrollMagic.Scene ({
+    triggerElement: '#main-nav',
+    triggerHook: 0
+  })
+  .setPin('#main-nav')
+  .addTo(controller);
+
 
 
   //loop through each .section element

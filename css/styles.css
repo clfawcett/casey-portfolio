@@ -29,10 +29,6 @@ body {
   font-weight: 400;
 }
 
-header {
-  position: relative;
-}
-
 
 nav {
   background-color: #fff;
@@ -59,17 +55,6 @@ footer {
 
 .img {
   vertical-align: center;
-}
-
-.load_cont {
-  opacity: 0;
-  transition: all .5s ease;
-  transform: translateX(50px);
-}
-
-.load_cont.fade-in {
-  opacity: 1;
-  transform: translateX(0);
 }
 
 
@@ -371,14 +356,14 @@ strong{
 }
 
 
-
 /**** nav menu  ****/
+
+
 
 nav ul {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
-  list-style: none;
   margin: 0;
   overflow: hidden;
   padding: 0;
@@ -390,6 +375,11 @@ nav a {
   padding: 0 6.4vw;
 }
 
+#pagenav {
+  position: fixed;
+  top:0;
+  width: 100%;
+}
 
 .nav_expmenu {
   display: none;
@@ -509,6 +499,7 @@ padding: 0 6.4vw;
   grid-area: 2/1/2/7;
   grid-column-gap: 1.2rem;
   grid-template-columns: repeat(6, 1fr);
+  margin-top: 10.8vh;
 }
 
 .hero_background {
@@ -564,7 +555,7 @@ padding: 0 6.4vw;
   grid-area: 2/1/2/7;
   grid-column-gap: 1.2rem;
   grid-template-columns: repeat(6, 1fr);
-  margin-bottom: 7.2vh;
+  padding-bottom: 7.2vh;
 }
 
 
@@ -1732,13 +1723,6 @@ padding: 0 6.4vw;
 @media screen and (min-width: 1025px) {
 
 
-  header {
-    grid-area: 1/1/1/13;
-  }
-
-  nav {
-    grid-area: 2/1/2/13
-  }
 
   footer {
     display: grid;
@@ -1911,7 +1895,6 @@ padding: 0 6.4vw;
     grid-area: 1/1/1/13;
     grid-column-gap: 1.2rem;
     grid-template-columns: repeat(12, 1fr);
-    margin-bottom: 7.2rem;
   }
 
   .hero_background {
@@ -2858,7 +2841,6 @@ padding: 0 6.4vw;
     grid-template-areas:
     "icon1 icon2 icon3 icon4";
     grid-template-columns: repeat(4, 1fr);
-    padding-bottom: 4rem;
   }
 
   .icon1 {

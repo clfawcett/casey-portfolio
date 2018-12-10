@@ -17,8 +17,47 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container load_cont"  id="load">
-      <header class="header">
+    <div class="container">
+      <header class="header" id="load">
+        <!-- Nav -->
+        <nav id="pagenav">
+          <ul>
+            <li class="nav_logo">
+              <a href="index.html" class="logo"><img id="navlogo" src="images/logo_dark_m.svg"></a>
+            </li>
+            <li class="nav_menu" id="navmenu">
+              <button onclick="openNavMenu()" id="slidebtn" class="nav_menu_btn btn hmenu">Menu</button>
+            </li>
+            <li class="nav_expmenu">
+              <div class="exp_menu">
+                <ul>
+                  <li><a href="index.html#work">Work</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="resume.html">Resume</a></li>
+                  <li><a href="mailto:caseyfawcett@gmail.com">Contact</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+          <!-- Section - Hero -->
+        <section class="hero2">
+          <!-- Hero -->
+          <div class="gradient">
+            <a href="ideabase.html"><div class="proj_img"></div></a>
+          </div>
+          <!-- Intro -->
+          <div class="hero_content">
+            <div class="inner_content">
+              <h1>Ideabase</h1>
+              <p class="description">A web-based organization and storage system with a mission to increase efficiency by offering a simple way to showcase, save, collaborate on projects.</p>
+            </div>
+          </div>
+          <div class="btn_shell_proj">
+            <a href="ideabase.html" class="btn btn_small dark_btn">View Prototype</a>
+          </div>
+          <div class="hero_background"></div>
+        </section>
       </header>
       <div id="menu_links">
         <div class="menu_content" id="slideMenu">
@@ -29,772 +68,734 @@
           <ul class="menu_nav_links">
             <li><a href="index.html#work" onclick="closeNavMenu()">WORK</a></li>
             <li><a href="about.html">ABOUT</a></li>
-            <li><a href="https://drive.google.com/file/d/1g1wevkK2bHBMXhWv-EJYvY8x9JPFa3S7/view?usp=sharing">RESUME</a></li>
+            <li><a href="resume.html">RESUME</a></li>
             <li><a href="mailto:caseyfawcett@gmail.com">CONTACT</a></li>
           </ul>
         </div>
       </div>
-      <!-- Nav -->
-      <nav class="navbar" id="pagenav">
-        <ul>
-          <li class="nav_logo">
-            <a href="index.html" class="logo"><img id="navlogo" src="images/logo_dark_m.svg"></a>
-          </li>
-          <li class="nav_menu" id="navmenu">
-            <button onclick="openNavMenu()" id="slidebtn" class="nav_menu_btn btn hmenu">Menu</button>
-          </li>
-          <li class="nav_expmenu">
-            <div class="exp_menu">
-              <ul>
-                <li><a href="index.html#work">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="https://drive.google.com/file/d/1g1wevkK2bHBMXhWv-EJYvY8x9JPFa3S7/view?usp=sharing">Resume</a></li>
-                <li><a href="mailto:caseyfawcett@gmail.com">Contact</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <div class="main">
-          <!-- Section - Hero -->
-          <section class="hero2">
-            <!-- Hero -->
-            <div class="gradient">
-              <a href="ideabase.html"><div class="proj_img"></div></a>
-            </div>
-            <!-- Intro -->
-            <div class="hero_content">
-              <div class="inner_content">
-                <h1>Ideabase</h1>
-                <p class="description">A web-based organization and storage system with a mission to increase efficiency by offering a simple way to showcase, save, collaborate on projects.</p>
-              </div>
-            </div>
-            <div class="btn_shell_proj">
-              <a href="ideabase.html" class="btn btn_small dark_btn">View Prototype</a>
-            </div>
-            <div class="hero_background"></div>
-          </section>
-          <!-- Section - Overview -->
-          <section class="overview section">
-            <div class="over_cont">
-              <div class="summary grid">
-                    <div class="o_title">
-                      <h2 class="ib_h">Overview</h2>
-                    </div>
-                    <div class="o_leftcol">
-                      <div class="oh1">
-                        <h4>Role</h4>
-                      </div>
-                      <div class="op1">
-                        <p>UX, Visual Design, Branding & Identity</p>
-                      </div>
-                      <div class="oh2">
-                        <h4>Tools</h4>
-                      </div>
-                      <div class="op2">
-                        <p>Figma, Balsamiq, Invision, Adobe Photoshop & Illustrator</p>
-                      </div>
-                      <div class="oh3">
-                        <h4>Date</h4>
-                      </div>
-                      <div class="op3">
-                        <p>Summer 2018</p>
-                      </div>
-                    </div>
-                    <div class="o_rightcol">
-                      <div class="oh4">
-                        <h4>Skills</h4>
-                      </div>
-                      <div class="op4">
-                        <p>Survey design, competitive analysis, ideation, user stories and flows, creating personas, conducting user interviews and observations, sketching, wireframing, prototyping, user testing & analysis</p>
-                      </div>
-                    </div>
-                </div>
-            </div>
-          </section>
-          <!-- Section - Problem-->
-          <section class="problem section">
-            <div class="prob_cont">
-              <div>
-                <h2 class="ib_h">Problem</h2>
-                  <p class="quote">How might we design a storage system with an emphasis on organization and collaboration that is easy for users to store and showcase content?</p>
-              </div>
-            </div>
-          </section>
-          <!-- Section - Solution -->
-          <section class="solution section">
-            <div class="solgrid">
-              <div class="sol">
-                  <div class="sc">
-                    <div>
-                      <h2 class="ib_h">Solution</h2>
-                      <p>Focused on efficiency, Ideabase offers document storage, content creation, visual organization tools, and real-time collaboration in one location.  Ideabase is focused on providing a clear and intuitive storage solution.  Users will be able to showcase content and support project management.</p>
-                    </div>
-                  </div>
-              </div>
-              <div class="si sectleft">
-                <img class="si_img" src="images/ideabase_solution.png">
-              </div>
-            </div>
-          </section>
-          <!-- Section - Process -->
-          <section class="process">
-            <div class="project">
-              <div class="center">
-                <h2>PROCESS</h2>
-              </div>
-              <!-- Icons -->
-              <div class="process_cont">
-                <div class="process_grid">
-                  <div class="vert1 hor">
-                    <hr />
-                  </div>
-                  <div class="pi1">
-                    <img src="images/icon_research.svg">
-                  </div>
-                  <div class="pc1">
-                    <h4>01 Research & Define</h4>
-                    <p>Competitive Analysis
-                      <br>User Research</p>
-                  </div>
-                  <div class="vert2 hor">
-                    <hr/>
-                  </div>
-                  <div class="pi2">
-                    <img src="images/icon_strategy.svg">
-                  </div>
-                  <div class="pc2">
-                    <h4>02 Strategy</h4>
-                    <p>User Personas
-                      <br>User Stories</p>
-                  </div>
-                  <div class="vert3 hor">
-                    <hr />
-                  </div>
-                  <div class="pi3">
-                   <img src="images/icon_ia.svg">
-                  </div>
-                  <div class="pc3">
-                    <h4>03 Information Architecture</h4>
-                    <p>User Flows & Sitemaps
-                      <br>Wireframes & Testing</p>
-                  </div>
-                  <div class="vert4 hor">
-                    <hr />
-                  </div>
-                  <div class="pi4">
-                    <img src="images/icon_branding.svg">
-                  </div>
-                  <div class="pc4">
-                    <h4>04 Branding & Identity</h4>
-                      <p>Brand Story & Logo
-                        <br>Style Guide</p>
-                  </div>
-                  <div class="vert5 hor">
-                    <hr />
-                  </div>
-                  <div class="pi5">
-                    <img src="images/icon_visual.svg">
-                  </div>
-                  <div class="pc5">
-                    <h4>05 Visual Design</h4>
-                        <p>High Fidelity Prototype
-                          <br>User Testing</p>
-                  </div>
-                  <div class="longline">
-                    <hr />
-                  </div>
-                  <div class="rowvert v1"></div>
-                  <div class="rowvert v2"></div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Section - Research & Define -->
-          <section class="research grid">
-              <div class="section_num one">
-                <img src="images/01.png">
-              </div>
-              <!-- Competitive Analysis -->
-              <div class="sub_sec ca_shell section">
-                <div class="sum_content">
-                  <h2 class="ib_h">01_Research & Define</h2>
-                  <h3>Competitive Analysis</h3>
-                  <p>To better understand the cloud and productivity market, I began research and analysis on competitors like Dropbox, Evernote, and Pinterest. SWOT analysis and user flow mapping revealed gaps in current services and untapped opportunities for a new product with a focus on simplicity, visual organization, and collaboration.</p>
-                  <div class="competitors">
-                    <div>
-                      <img src="images/icon_pinterest.png">
-                    </div>
-                    <div>
-                      <img src="images/icon_evernote.png">
-                    </div>
-                    <div>
-                      <img src="images/icon_dropbox.png">
-                    </div>
-                  </div>
-                </div>
 
+      <div class="main">
+        <!-- Section - Overview -->
+        <section class="overview section">
+          <div class="over_cont">
+            <div class="summary grid">
+                  <div class="o_title">
+                    <h2 class="ib_h">Overview</h2>
+                  </div>
+                  <div class="o_leftcol">
+                    <div class="oh1">
+                      <h4>Role</h4>
+                    </div>
+                    <div class="op1">
+                      <p>UX, Visual Design, Branding & Identity</p>
+                    </div>
+                    <div class="oh2">
+                      <h4>Tools</h4>
+                    </div>
+                    <div class="op2">
+                      <p>Figma, Balsamiq, Invision, Adobe Photoshop & Illustrator</p>
+                    </div>
+                    <div class="oh3">
+                      <h4>Date</h4>
+                    </div>
+                    <div class="op3">
+                      <p>Summer 2018</p>
+                    </div>
+                  </div>
+                  <div class="o_rightcol">
+                    <div class="oh4">
+                      <h4>Skills</h4>
+                    </div>
+                    <div class="op4">
+                      <p>Survey design, competitive analysis, ideation, user stories and flows, creating personas, conducting user interviews and observations, sketching, wireframing, prototyping, user testing & analysis</p>
+                    </div>
+                  </div>
               </div>
-              <!-- User Research -->
-              <div class="user_research section">
-                <div class="ur_img"></div>
-                <div class="ur_content">
-                  <div class="ur_inner">
-                    <h3>User Research</h3>
-                    <h4>Survey & Interviews</h4>
-                    <p>The first step was to create a survey and post to multiple public forums and social media platforms.  The questions focused on defining how respondents organize and store content, use priorities, current solutions, and frustrations.  The resulting data revealed opportunites to solve problems.  Using respondents from the survey, I conducted interviews to refine the problem and begin to structure the solution.</p>
-                  </div>
-                </div>
-                <!-- Chart Js -->
-                <div class="results section">
-                  <div>
-                    <div class="center">
-                      <h4>Results</h4>
-                    </div>
-                    <div class="result-contain project">
-                      <div class="chart1_title">
-                        <p>Currently Used Services</p>
-                      </div>
-                      <div class="chart1">
-                        <canvas id="favService"></canvas>
-                      </div>
-                      <div class="cl">
-                        <img class="cl_img" src="images/current_legend.png">
-                      </div>
-                      <div class="chart2_title">
-                        <p>Most Useful Features</p>
-                      </div>
-                      <div class="chart2">
-                        <canvas id="bestFeatures"></canvas>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Percentage Results -->
-                <div class="percent_grid project">
-                    <div class="percent1">
-                      <div class="p1">
-                        <h3>90%</h3>
-                      </div>
-                      <div class="c1">
-                        <p>Use cloud storage to share files or content with others.</p>
-                      </div>
-                    </div>
-                    <div class="percent2">
-                      <div class="p1">
-                        <h3>60%</h3>
-                      </div>
-                      <div class="c1">
-                        <p>Find organizing content with tags and categories useful</p>
-                      </div>
-                    </div>
-                    <div class="percent3">
-                      <div class="p1">
-                          <h3>90%</h3>
-                      </div>
-                      <div class="c1">
-                        <p>Felt collaboration features save time.</p>
-                      </div>
-                    </div>
-                    <div class="percent4">
-                      <div class="p1">
-                        <h3>47%</h3>
-                      </div>
-                      <div class="c1">
-                        <p>Were frustrated with current organization tools, uploading, and saving content.</p>
-                      </div>
-                    </div>
-                  </div>
-                <!-- Insights -->
-                <div class="insight project">
-                  <div class="insight_inner">
-                    <h4>Insights</h4>
-                    <p>The survey responses revealed that people primarily use cloud storage to collaborate and share with others.  Users are frustrated with current organization tools, the process of saving web content, and uploading files. How might a solution enable a solution that increases user efficiency and and the ability of users to collaborate?</p>
-                  </div>
-                </div>
-              </div>
-          </section>
-          <!-- Section - Strategy -->
-          <section class="strategy grid">
-            <div class="section_num two">
-              <img src="images/02.png">
-            </div>
-            <!-- User Personas -->
-            <div class="sub_sec persona_shell section">
-              <div>
-                <h2 class="ib_h">02_Strategy</h2>
-                <h3>User Personas</h3>
-                <p>Analyzing the survey and interview data exposed two main classes of users. These classes were utilized to create two user personas, the Visual Collaborator, and Content Coordinator.</p>
-              </div>
-            </div>
-            <div class="pers_cont section">
-              <!-- First User Persona -->
-              <div class="persona pers_one project">
-                <div>
-                  <div class="per_h">
-                    <div class="perh1">
-                      <h3>Thom</h3>
-                      <h4>Project Manager</h4>
-                    </div>
-                    <div>
-                      <img src="images/persona_thom.png">
-                    </div>
-                  </div>
-                  <div class="per_shell">
-                    <div>
-                      <div class="per_grid">
-                        <div class="ph1">
-                          <h4>Age</h4>
-                        </div>
-                        <div class="pp1">
-                          <p>32 Years Old</p>
-                        </div>
-                        <div class="ph2">
-                          <h4>Location</h4>
-                        </div>
-                        <div class="pp2">
-                          <p>Walnut Creek, CA</p>
-                        </div>
-                        <div class="ph3">
-                          <h4>Gender</h4>
-                        </div>
-                        <div class="pp3">
-                          <p>Male</p>
-                        </div>
-                      </div>
-                      <div class="per_cont">
-                        <h4>Goals</h4>
-                        <p>To quickly categorize content for searches
-                          <br>Multiple creation and uploading tools on all devices
-                          <br>Consistent features across all devices</p>
-                        <h4>Frustrations</h4>
-                        <p>Features missing on some devices
-                          <br>Complex process to apply specific tags to documents
-                          <br>Confusing file sharing and uploading without account</p>
-                        <h4>Motivations</h4>
-                        <p>Thom currently uses multiple storage platforms to store his personal and work related files.  He needs to create and access notes, documents, spreadsheets, and forms from his desktop, browser, and phone. Thom works hard to keep his content organized and is frustrated with  the process of searching for his files. </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Second User Persona -->
-              <div class="persona pers_two project">
-                <div>
-                  <div class="h_shell">
-                    <div class="per_h">
-                      <div>
-                        <h3>Audrey</h3>
-                        <h4>Graphic Design Student</h4>
-                      </div>
-                      <div>
-                        <img src="images/persona_audrey.png">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="per_shell">
-                    <div>
-                      <div class="per_grid">
-                        <div class="ph1">
-                          <h4>Age</h4>
-                        </div>
-                        <div class="pp1">
-                          <p>26 Years Old</p>
-                        </div>
-                        <div class="ph2">
-                          <h4>Location</h4>
-                        </div>
-                        <div class="pp2">
-                          <p>Seattle, WA</p>
-                        </div>
-                        <div class="ph3">
-                          <h4>Gender</h4>
-                        </div>
-                        <div class="pp3">
-                          <p>Female</p>
-                        </div>
-                      </div>
-                      <div class="per_cont">
-                        <h4>Goals</h4>
-                        <p>To easily share and view groups of images and files
-                          <br>Efficient integration with social media
-                          <br>Intuitive compiling of saved web content</p>
-                        <h4>Frustrations</h4>
-                        <p>Confusing to integrate stored content with social media
-                          <br>Ineffective image viewing features
-                          <br>Time consuming to organize and save web content</p>
-                        <h4>Motivations</h4>
-                        <p>Audrey spends a lot of time learning about new technology and design trends.  She loves posting photos or interesting articles to her social media, and wishes it was integrated into her storage service.  She currently uses Pinterest to create documents and upload files she shares with her teachers and peers.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- User Stories -->
-            <div class="user_story section">
-              <div class="sub_sec us_shell">
-                <div>
-                  <h3>User Stories</h3>
-                  <p>To establish features, I compiled research data and created a list of user stories of potential tasks of new and returning users.  These user stories were refined and prioritized to define MVP.</p>
-                  <div class="btn_shell">
-                    <a href="https://docs.google.com/spreadsheets/d/1-e1HsG4ZpSMmfmL_mfIuk6IE0s2fri3URgbYWGDh3lc/edit?usp=sharing" class="btn btn_sec dark_btn">View Stories</a>
-                  </div>
-                </div>
-              </div>
-              <!-- Icons -->
-              <div class="us_grid project">
-                <div class="us1">
-                  <div class="usi">
-                    <img src="images/icon_uploading.svg" alt="An illustration of a two files.">
-                  </div>
-                  <div class="usc">
-                    <div>
-                      <h4>Uploading & File Creation</h4>
-                    </div>
-                    <p>Create, save and upload different types of content to view and share.</p>
-                  </div>
-                </div>
-                <div class="us2">
-                  <div class="usi">
-                    <img src="images/icon_share.svg" alt="An illustration of a house connected to destination with a line that shows a file travelling along the line.">
-                  </div>
-                  <div class="usc">
-                    <h4>Sharing & Collaboration</h4>
-                    <p>Collaborate on projects with teams using chat, and share files with others.</p>
-                  </div>
-                </div>
-                <div class="us3">
-                  <div class="usi" id="dash_icon">
-                    <img src="images/icon_dash.svg" alt="An illustration of a dashboard filled with colored boxes.">
-                  </div>
-                  <div class="usc">
-                      <h4>Dashboard</h4>
-                      <p>Collecting the most useful and frequently used features in one spot.</p>
-                  </div>
-                </div>
-                <div class="us4">
-                  <div class="usi">
-                   <img src="images/icon_organize.svg" alt="An illustration of a file tree consisting of colored boxes.">
-                  </div>
-                  <div class="usc">
-                    <h4>Organizing Files</h4>
-                    <p>Tag and organize content into projects easing the process of finding content.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Information Architecture -->
-          <section class="ia grid">
-              <div class="section_num three">
-                <img src="images/03.png">
-              </div>
-              <div class="sub_sec uf_shell section">
-                <div>
-                  <h2 class="ib_h">03_Information Architecture</h2>
-                  <h3> User Flows & Sitemaps</h3>
-                  <p>While keeping the personas in mind, I began with sketching out multiple iterations of the onboarding, uploading, upgrading, organizing, and collaborating user flows.  After evaluation, I distilled the process and mapped out the final flows.  User flows were then used to create a sitemap and initial content strategy.</p>
-                  <div class="btn_shell">
-                    <a href="https://drive.google.com/open?id=1Pawflojj7PK5tcqQ3fOH3ieptZ1eh1Lf" class="btn btn_sec dark_btn">View Flows</a>
-                  </div>
-                </div>
-              </div>
-              <!-- User Flows -->
-              <div class="user_flows section">
-                <div class="uf_img_cont">
-                  <div class="uf_img_shell project">
-                    <img class="uf_img" src="images/flow_sketch.jpg" alt="Pencil drawings of two possible user flows of uploading a file.">
-                  </div>
-                  <div class="uf_img_shell project">
-                    <img class="uf_img" src="images/flow_render.jpg" alt="Computer drawing with red denoting start and end and blue showing decisions of uploading file.">
-                  </div>
-                </div>
-              </div>
-              <!-- Lofi wireframes -->
-              <div class="wireframe section">
-                <div class="sub_sec wf_shell">
-                  <div>
-                    <h3>Wireframes & Testing</h3>
-                      <p>Using the content strategy, sitemap and user flows, I built low fidelity wireframes.  After sketching a few quick iterations, I finalized the wireframes in Figma.  The wireframes were used to create a clickable prototype in Invision to user test.</p>
-                      <h4>User Testing & Prototype</h4>
-                      <p>Testing was conducted in person and remotely using Skype with a test script. Feedback indicated the organize and move features needed to be redesigned to have greater visual prominence.  Also, CTA’s needed to be relocated for better findability.</p>
-                      <div class="btn_shell">
-                        <a href="https://invis.io/6MOXK3JF8YQ" class="btn btn_sec dark_btn">View Lo-Fi Prototype</a>
-                      </div>
-                  </div>
-                </div>
-                <!-- Images of Interface changes -->
-                <div class="lofi_changes">
-                  <figure class="change-screen-cont">
-                    <div class="figcap-shell">
-                      <figcaption class="label">Before</figcaption>
-                    </div>
-                    <div class="change-screen">
-                      <div class="lofi-orig" alt="screenshot of the adding a file interface with call to action buttons located at the bottom right"></div>
-                    </div>
-                  </figure>
-                  <figure class="change-screen-cont">
-                    <div class="figcap-shell">
-                      <figcaption class="label">After</figcaption>
-                    </div>
-                    <div class="change-screen">
-                      <div class="lofi-upd" alt="screenshot of an updated add file interface with buttons located on the top right and a new dropdown showing file location on the top left of the title bar.">
-                      </div>
-                    </div>
-                  </figure>
-                </div>
-              </div>
-          </section>
-          <!-- Section - Branding & Identity -->
-          <section class="brand">
-              <!-- Brand Story & logo -->
-              <div class="story grid">
-                <div class="section_num four">
-                  <img src="images/04.png">
-                </div>
-                <div class="sub_sec story_shell section">
-                  <div>
-                    <h2 class="ib_h">04_Branding & Identity</h2>
-                    <h3>Brand Story & Logo</h3>
-                    <p>Developing the concept for the brand began with brainstorming and mind mapping.  After conducting preference tests on two options, I decided on the name Ideabase. The brand story is inspired by the six components utilized when managing and unifying communities. Ideabase seeks to be friendly, reliable, and intelligently helpful while increasing efficiency.</p>
-                  </div>
-                </div>
-                <div class="logo_proc">
-                  <div class="lg_left"></div>
-                  <div class="lg_right"></div>
-                </div>
-                <div class="sub_sec logo_shell section">
-                  <p>The Ideabase logo is built on three concepts:  an abstraction of the letters i and b, a project container housing your thoughts and ideas, and the concept of connection.</p>
-                </div>
-                <div class="cent_img"></div>
-                <div class="lm_shell project">
-                  <div class= "lm_col">
-                    <div>
-                      <img class="limg" src="images/lg_prim.svg" alt="Primary horizontal logo"/>
-                    </div>
-                    <div>
-                      <img class="limg" src="images/lg_dark.svg" alt="Dark horizontal logo" />
-                    </div>
-                    <div>
-                      <img class="limg_dk" src="images/lg_white.svg" alt="White horizontal logo" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Typography -->
-              <div class="type grid section">
-                <div class="sub_sec t_shell">
-                  <div>
-                    <h3>Typography</h3>
-                    <p>The typography was chosen to support ideas of unification and collaboration.</p>
-                  </div>
-                </div>
-                <div class="type_shell">
-                  <div class ="typ_cont typ_right">
-                    <div class="img_typ_1" alt="Faricy New is a geometric typeface with a high x-height and ensures clear legibility from distances">
-                    </div>
-                  </div>
-                  <div class="typ_cont">
-                    <div class="img_typ_2" "Lato is warm and geometric with humanist elements.  Lato has great flexibility while maintaining distinctiveness between weights.">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Color Palette-->
-              <div class="color grid section">
-                <div class="sub_sec col_shell">
-                    <h3>Colors</h3>
-                    <p>The main identity palette used colors that supported concepts of reliability and simplicity. Calm blue was used as the primary color and Burgeon black and secondary color.</p>
-                </div>
-                <div class="swatch_cont sectright">
-                  <div class="shell">
-                    <div class="swatch small">
-                        <div class="col1">
-                          <div class="colcont">#109AFE</div>
-                        </div>
-                        <div class="col2">
-                          <div class="colcont">#302C2C</div>
-                        </div>
-                        <div class="col3">
-                          <div class="colcont">#F0C048</div>
-                        </div>
-                        <div class="col4">
-                          <div class="colcont">#FF5F52</div>
-                        </div>
-                        <div class="col5">
-                          <div class="colcont">#5E5C5C</div>
-                        </div>
-                        <div class="col6">
-                          <div class="colcont">#ACA9A5</div>
-                        </div>
-                        <div class="col7">
-                          <div class="colcont">#EFEBE9</div>
-                        </div>
-                        <div class="col8">
-                          <div class="colcont">#F4F2F1</div>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Style Guide -->
-              <div class="guide grid project">
-                <div class="sub_sec guide_shell">
-                  <div class="guide_inner">
-                    <h3>Style Guide</h3>
-                    <p>All of the branding components were then assembled into a style guide to begin defining patterns and ensure the maintainability of the brand identity moving forward in the design process.</p>
-                    <div class="btn_shell">
-                      <a href="https://docs.google.com/presentation/d/1IHQjFUogRnysFSvWK0AOqrwF-qo7k0Ih-dWIbP5OIUs/edit?usp=sharing" class="btn_sec dark_btn">View Style Guide</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Slideshow container -->
-                <div class="slide_cont">
-                  <img class="sgSlides " src="images/style_01cover.jpg" />
-                  <img class="sgSlides" src="images/style_02overview.jpg" />
-                  <img class="sgSlides" src="images/style_03logo.jpg" />
-                  <img class="sgSlides" src="images/style_04logo.jpg" />
-                  <img class="sgSlides" src="images/style_05logo.jpg" />
-                  <img class="sgSlides" src="images/style_06color.jpg" />
-                  <img class="sgSlides" src="images/style_07typo.jpg" />
-                  <img class="sgSlides" src="images/style_08typo.jpg" />
-                  <img class="sgSlides" src="images/style_09typo.jpg" />
-                  <img class="sgSlides" src="images/style_10typo.jpg" />
-                  <img class="sgSlides" src="images/style_11tone.jpg" />
-                  <img class="sgSlides" src="images/style_12icon.jpg" />
-                  <img class="sgSlides" src="images/style_13button.jpg" />
-                  <button class="slide_btn display_left" onclick="plusDivs(-1)">&#8249;</button>
-                  <button class="slide_btn  display_right" onclick="plusDivs(+1)">&#8250;</button>
-                </div>
-              </div>
-          </section>
-          <!-- Section - Visual Design -->
-          <section class="visual grid section">
-            <div class="section_num">
-              <img src="images/05.png">
-            </div>
-            <!-- HiFi Prototype -->
-            <div class="hifi_prot">
-              <div class="sub_sec">
-                <div>
-                  <h2 class="ib_h">05_Visual Design</h2>
-                  <h3>High Fidelity Prototype</h3>
-                  <p>Using the feedback from wireframe testing and branding, I created a high fidelity mockup in Figma and then converted it to a clickable prototype.</p>
-                  <div class="dbl_btn_cont">
-                      <a href="https://invis.io/QUJJSLC94JA" class="btn_dbl dark_btn btn">Laptop Prototype</a>
-                      <a href="https://invis.io/VNJJSOO3AEB" class="btn_dbl btn blue_btn">Mobile Prototype</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- User Testing -->
-            <div class="user_test grid">
-              <div class="sub_sec ut_shell">
-                <div>
-                  <h4>User Testing</h4>
-                  <p>After another round of user testing conducted remotely with Maze, I was able to identify areas of improvement and integrate into the final prototype.  Here is the evolution of the dashboard from start to finish.</p>
-                </div>
-              </div>
-              <div class="hifi-changes hifi_one grid">
-                <div class="change_title center">
-                  <h4>Dashboard Design</h4>
-                </div>
-                <div class="change_shell hifi_before section">
-                  <figure class="hifi-change-cont">
-                    <div class="figcap_shell">
-                      <figcaption class="label">Before</figcaption>
-                    </div>
-                    <div class="change-screen">
-                      <div class="hifi-dash-orig" alt="Color screenshot of the dashboard with a full screen grid of files and drop down menu located on the title bar."></div>
-                    </div>
-                  </figure>
-                </div>
-                <div class="img-descrip desc_bfr">
-                  <p>User tested drop-down navigation, recent and alphabetical sort feature for quicker wayfinding, and A/B tested logo color.</p>
-                </div>
-                <div class="change_shell hifi_after section">
-                  <figure class="hifi-change-cont">
-                    <div class="figcap_shell">
-                      <figcaption class="label">After</figcaption>
-                    </div>
-                    <div class="change-screen">
-                      <div class="hifi-dash-upd" alt="Color screenshot of an updated dashboard interface with with vertical navigation replacing dropdown menu.">
-                      </div>
-                    </div>
-                  </figure>
-                </div>
-                <div class="img-descrip desc_aft">
-                    <p>Add a vertical navigation bar for filtering content, changed the logo to monotone because it was a more intuitive experience between mobile and desktop.</p>
-                </div>
-                <div class="ch_bck"></div>
-              </div>
-              <div class="hifi-changes hifi_two grid">
-                <div class="change_title center">
-                  <h4>File Viewing Design</h4>
-                </div>
-                <div class="change_shell hifi_before section">
-                  <figure class="hifi-change-cont">
-                    <div class="figcap_shell">
-                      <figcaption class="label">Before</figcaption>
-                    </div>
-                    <div class="change-screen">
-                      <div class="hifi-add-orig" alt="Color screenshot of the adding a file interface with chat features and tagging options.">
-                      </div>
-                    </div>
-                  </figure>
-                </div>
-                <div class="img-descrip desc_bfr">
-                  <p>User tested moving file location, adding comments, returning to the dashboard.</p>
-                </div>
-                <div class="change_shell hifi_after section">
-                  <figure class="hifi-change-cont">
-                    <div class="figcap_shell">
-                      <figcaption class="label">After</figcaption>
-                    </div>
-                    <div class="change-screen">
-                      <div class="hifi-add-upd" alt="Color screenshot of an updated add file interface add tag icon located to the left of the tag titles.">
-                      </div>
-                    </div>
-                  </figure>
-                </div>
-                <div class="img-descrip desc_aft">
-                  <p>Added tag icon to ensure better findability of the tagging features.</p>
-                </div>
-                <div class="ch_bck"></div>
-              </div>
-            </div>
-            </section>
-          <section class="conclusion grid project">
-            <!-- Conclusion -->
-              <div class="concl_img_back">
-                <div class="cncl_desk_img ci1">
-                </div>
-                <div class="concl_phn_img1 ci2">
-                </div>
-                <div class="concl_phn_img2 ci3">
-                </div>
-              </div>
-              <div class="sub_sec concl_shell section">
-                  <h3>Conclusion</h3>
-                  <p>Ideabase was a project that taught me the importance of testing throughout this design process.  Knowing that simplicity was a priority, user testing helped me to determine when the design had crossed from obviously simple to confusing. Testing allowed for quick iteration and discovery of unidentified problems which resulted in a far improved final product and inspired a more informed solution.  The refinement of responsive elements within this project developed my ability to design a better, more cohesive structure between mobile and desktop. Moving forward, my priority is to add more functionality to the organization and tagging features.  Users indicated this is of high importance and would add overall value to the product beyond the MVP.</p>
-              </div>
-              <div class="line"></div>
-          </section>
-          <!-- Section - More Projects -->
-          <!-- <section class="more_proj">
+          </div>
+        </section>
+        <!-- Section - Problem-->
+        <section class="problem section">
+          <div class="prob_cont">
             <div>
-              <div class="back_btn">
-                <a href="index.html" class="btn_small"><img src="images/back.jpg"></a>
-              </div>
-              <div>
-                <h3>More Projects</h3>
-              </div>
-              <div class="next_btn">
-                <a href="index.html" class="btn_small"><img src="images/next.jpg"></a>
+              <h2 class="ib_h">Problem</h2>
+                <p class="quote">How might we design a storage system with an emphasis on organization and collaboration that is easy for users to store and showcase content?</p>
+            </div>
+          </div>
+        </section>
+        <!-- Section - Solution -->
+        <section class="solution section">
+          <div class="solgrid">
+            <div class="sol">
+                <div class="sc">
+                  <div>
+                    <h2 class="ib_h">Solution</h2>
+                    <p>Focused on efficiency, Ideabase offers document storage, content creation, visual organization tools, and real-time collaboration in one location.  Ideabase is focused on providing a clear and intuitive storage solution.  Users will be able to showcase content and support project management.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="si sectleft">
+              <img class="si_img" src="images/ideabase_solution.png">
+            </div>
+          </div>
+        </section>
+        <!-- Section - Process -->
+        <section class="process">
+          <div class="project">
+            <div class="center">
+              <h2>PROCESS</h2>
+            </div>
+            <!-- Icons -->
+            <div class="process_cont">
+              <div class="process_grid">
+                <div class="vert1 hor">
+                  <hr />
+                </div>
+                <div class="pi1">
+                  <img src="images/icon_research.svg">
+                </div>
+                <div class="pc1">
+                  <h4>01 Research & Define</h4>
+                  <p>Competitive Analysis
+                    <br>User Research</p>
+                </div>
+                <div class="vert2 hor">
+                  <hr/>
+                </div>
+                <div class="pi2">
+                  <img src="images/icon_strategy.svg">
+                </div>
+                <div class="pc2">
+                  <h4>02 Strategy</h4>
+                  <p>User Personas
+                    <br>User Stories</p>
+                </div>
+                <div class="vert3 hor">
+                  <hr />
+                </div>
+                <div class="pi3">
+                 <img src="images/icon_ia.svg">
+                </div>
+                <div class="pc3">
+                  <h4>03 Information Architecture</h4>
+                  <p>User Flows & Sitemaps
+                    <br>Wireframes & Testing</p>
+                </div>
+                <div class="vert4 hor">
+                  <hr />
+                </div>
+                <div class="pi4">
+                  <img src="images/icon_branding.svg">
+                </div>
+                <div class="pc4">
+                  <h4>04 Branding & Identity</h4>
+                    <p>Brand Story & Logo
+                      <br>Style Guide</p>
+                </div>
+                <div class="vert5 hor">
+                  <hr />
+                </div>
+                <div class="pi5">
+                  <img src="images/icon_visual.svg">
+                </div>
+                <div class="pc5">
+                  <h4>05 Visual Design</h4>
+                      <p>High Fidelity Prototype
+                        <br>User Testing</p>
+                </div>
+                <div class="longline">
+                  <hr />
+                </div>
+                <div class="rowvert v1"></div>
+                <div class="rowvert v2"></div>
               </div>
             </div>
-          </section> -->
+          </div>
+        </section>
+        <!-- Section - Research & Define -->
+        <section class="research grid">
+            <div class="section_num one">
+              <img src="images/01.png">
+            </div>
+            <!-- Competitive Analysis -->
+            <div class="sub_sec ca_shell section">
+              <div class="sum_content">
+                <h2 class="ib_h">01_Research & Define</h2>
+                <h3>Competitive Analysis</h3>
+                <p>To better understand the cloud and productivity market, I began research and analysis on competitors like Dropbox, Evernote, and Pinterest. SWOT analysis and user flow mapping revealed gaps in current services and untapped opportunities for a new product with a focus on simplicity, visual organization, and collaboration.</p>
+                <div class="competitors">
+                  <div>
+                    <img src="images/icon_pinterest.png">
+                  </div>
+                  <div>
+                    <img src="images/icon_evernote.png">
+                  </div>
+                  <div>
+                    <img src="images/icon_dropbox.png">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- User Research -->
+            <div class="user_research section">
+              <div class="ur_img"></div>
+              <div class="ur_content">
+                <div class="ur_inner">
+                  <h3>User Research</h3>
+                  <h4>Survey & Interviews</h4>
+                  <p>The first step was to create a survey and post to multiple public forums and social media platforms.  The questions focused on defining how respondents organize and store content, use priorities, current solutions, and frustrations.  The resulting data revealed opportunites to solve problems.  Using respondents from the survey, I conducted interviews to refine the problem and begin to structure the solution.</p>
+                </div>
+              </div>
+              <!-- Chart Js -->
+              <div class="results section">
+                <div>
+                  <div class="center">
+                    <h4>Results</h4>
+                  </div>
+                  <div class="result-contain project">
+                    <div class="chart1_title">
+                      <p>Currently Used Services</p>
+                    </div>
+                    <div class="chart1">
+                      <canvas id="favService"></canvas>
+                    </div>
+                    <div class="cl">
+                      <img class="cl_img" src="images/current_legend.png">
+                    </div>
+                    <div class="chart2_title">
+                      <p>Most Useful Features</p>
+                    </div>
+                    <div class="chart2">
+                      <canvas id="bestFeatures"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Percentage Results -->
+              <div class="percent_grid project">
+                  <div class="percent1">
+                    <div class="p1">
+                      <h3>90%</h3>
+                    </div>
+                    <div class="c1">
+                      <p>Use cloud storage to share files or content with others.</p>
+                    </div>
+                  </div>
+                  <div class="percent2">
+                    <div class="p1">
+                      <h3>60%</h3>
+                    </div>
+                    <div class="c1">
+                      <p>Find organizing content with tags and categories useful</p>
+                    </div>
+                  </div>
+                  <div class="percent3">
+                    <div class="p1">
+                        <h3>90%</h3>
+                    </div>
+                    <div class="c1">
+                      <p>Felt collaboration features save time.</p>
+                    </div>
+                  </div>
+                  <div class="percent4">
+                    <div class="p1">
+                      <h3>47%</h3>
+                    </div>
+                    <div class="c1">
+                      <p>Were frustrated with current organization tools, uploading, and saving content.</p>
+                    </div>
+                  </div>
+                </div>
+              <!-- Insights -->
+              <div class="insight project">
+                <div class="insight_inner">
+                  <h4>Insights</h4>
+                  <p>The survey responses revealed that people primarily use cloud storage to collaborate and share with others.  Users are frustrated with current organization tools, the process of saving web content, and uploading files. How might a solution enable a solution that increases user efficiency and and the ability of users to collaborate?</p>
+                </div>
+              </div>
+            </div>
+        </section>
+        <!-- Section - Strategy -->
+        <section class="strategy grid">
+          <div class="section_num two">
+            <img src="images/02.png">
+          </div>
+          <!-- User Personas -->
+          <div class="sub_sec persona_shell section">
+            <div>
+              <h2 class="ib_h">02_Strategy</h2>
+              <h3>User Personas</h3>
+              <p>Analyzing the survey and interview data exposed two main classes of users. These classes were utilized to create two user personas, the Visual Collaborator, and Content Coordinator.</p>
+            </div>
+          </div>
+          <div class="pers_cont section">
+            <!-- First User Persona -->
+            <div class="persona pers_one project">
+              <div>
+                <div class="per_h">
+                  <div class="perh1">
+                    <h3>Thom</h3>
+                    <h4>Project Manager</h4>
+                  </div>
+                  <div>
+                    <img src="images/persona_thom.png">
+                  </div>
+                </div>
+                <div class="per_shell">
+                  <div>
+                    <div class="per_grid">
+                      <div class="ph1">
+                        <h4>Age</h4>
+                      </div>
+                      <div class="pp1">
+                        <p>32 Years Old</p>
+                      </div>
+                      <div class="ph2">
+                        <h4>Location</h4>
+                      </div>
+                      <div class="pp2">
+                        <p>Walnut Creek, CA</p>
+                      </div>
+                      <div class="ph3">
+                        <h4>Gender</h4>
+                      </div>
+                      <div class="pp3">
+                        <p>Male</p>
+                      </div>
+                    </div>
+                    <div class="per_cont">
+                      <h4>Goals</h4>
+                      <p>To quickly categorize content for searches
+                        <br>Multiple creation and uploading tools on all devices
+                        <br>Consistent features across all devices</p>
+                      <h4>Frustrations</h4>
+                      <p>Features missing on some devices
+                        <br>Complex process to apply specific tags to documents
+                        <br>Confusing file sharing and uploading without account</p>
+                      <h4>Motivations</h4>
+                      <p>Thom currently uses multiple storage platforms to store his personal and work related files.  He needs to create and access notes, documents, spreadsheets, and forms from his desktop, browser, and phone. Thom works hard to keep his content organized and is frustrated with  the process of searching for his files. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Second User Persona -->
+            <div class="persona pers_two project">
+              <div>
+                <div class="h_shell">
+                  <div class="per_h">
+                    <div>
+                      <h3>Audrey</h3>
+                      <h4>Graphic Design Student</h4>
+                    </div>
+                    <div>
+                      <img src="images/persona_audrey.png">
+                    </div>
+                  </div>
+                </div>
+                <div class="per_shell">
+                  <div>
+                    <div class="per_grid">
+                      <div class="ph1">
+                        <h4>Age</h4>
+                      </div>
+                      <div class="pp1">
+                        <p>26 Years Old</p>
+                      </div>
+                      <div class="ph2">
+                        <h4>Location</h4>
+                      </div>
+                      <div class="pp2">
+                        <p>Seattle, WA</p>
+                      </div>
+                      <div class="ph3">
+                        <h4>Gender</h4>
+                      </div>
+                      <div class="pp3">
+                        <p>Female</p>
+                      </div>
+                    </div>
+                    <div class="per_cont">
+                      <h4>Goals</h4>
+                      <p>To easily share and view groups of images and files
+                        <br>Efficient integration with social media
+                        <br>Intuitive compiling of saved web content</p>
+                      <h4>Frustrations</h4>
+                      <p>Confusing to integrate stored content with social media
+                        <br>Ineffective image viewing features
+                        <br>Time consuming to organize and save web content</p>
+                      <h4>Motivations</h4>
+                      <p>Audrey spends a lot of time learning about new technology and design trends.  She loves posting photos or interesting articles to her social media, and wishes it was integrated into her storage service.  She currently uses Pinterest to create documents and upload files she shares with her teachers and peers.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- User Stories -->
+          <div class="user_story section">
+            <div class="sub_sec us_shell">
+              <div>
+                <h3>User Stories</h3>
+                <p>To establish features, I compiled research data and created a list of user stories of potential tasks of new and returning users.  These user stories were refined and prioritized to define MVP.</p>
+                <div class="btn_shell">
+                  <a href="https://docs.google.com/spreadsheets/d/1-e1HsG4ZpSMmfmL_mfIuk6IE0s2fri3URgbYWGDh3lc/edit?usp=sharing" class="btn btn_sec dark_btn">View Stories</a>
+                </div>
+              </div>
+            </div>
+            <!-- Icons -->
+            <div class="us_grid project">
+              <div class="us1">
+                <div class="usi">
+                  <img src="images/icon_uploading.svg" alt="An illustration of a two files.">
+                </div>
+                <div class="usc">
+                  <div>
+                    <h4>Uploading & File Creation</h4>
+                  </div>
+                  <p>Create, save and upload different types of content to view and share.</p>
+                </div>
+              </div>
+              <div class="us2">
+                <div class="usi">
+                  <img src="images/icon_share.svg" alt="An illustration of a house connected to destination with a line that shows a file travelling along the line.">
+                </div>
+                <div class="usc">
+                  <h4>Sharing & Collaboration</h4>
+                  <p>Collaborate on projects with teams using chat, and share files with others.</p>
+                </div>
+              </div>
+              <div class="us3">
+                <div class="usi" id="dash_icon">
+                  <img src="images/icon_dash.svg" alt="An illustration of a dashboard filled with colored boxes.">
+                </div>
+                <div class="usc">
+                    <h4>Dashboard</h4>
+                    <p>Collecting the most useful and frequently used features in one spot.</p>
+                </div>
+              </div>
+              <div class="us4">
+                <div class="usi">
+                 <img src="images/icon_organize.svg" alt="An illustration of a file tree consisting of colored boxes.">
+                </div>
+                <div class="usc">
+                  <h4>Organizing Files</h4>
+                  <p>Tag and organize content into projects easing the process of finding content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Information Architecture -->
+        <section class="ia grid">
+            <div class="section_num three">
+              <img src="images/03.png">
+            </div>
+            <div class="sub_sec uf_shell section">
+              <div>
+                <h2 class="ib_h">03_Information Architecture</h2>
+                <h3> User Flows & Sitemaps</h3>
+                <p>While keeping the personas in mind, I began with sketching out multiple iterations of the onboarding, uploading, upgrading, organizing, and collaborating user flows.  After evaluation, I distilled the process and mapped out the final flows.  User flows were then used to create a sitemap and initial content strategy.</p>
+                <div class="btn_shell">
+                  <a href="https://drive.google.com/open?id=1Pawflojj7PK5tcqQ3fOH3ieptZ1eh1Lf" class="btn btn_sec dark_btn">View Flows</a>
+                </div>
+              </div>
+            </div>
+            <!-- User Flows -->
+            <div class="user_flows section">
+              <div class="uf_img_cont">
+                <div class="uf_img_shell project">
+                  <img class="uf_img" src="images/flow_sketch.jpg" alt="Pencil drawings of two possible user flows of uploading a file.">
+                </div>
+                <div class="uf_img_shell project">
+                  <img class="uf_img" src="images/flow_render.jpg" alt="Computer drawing with red denoting start and end and blue showing decisions of uploading file.">
+                </div>
+              </div>
+            </div>
+            <!-- Lofi wireframes -->
+            <div class="wireframe section">
+              <div class="sub_sec wf_shell">
+                <div>
+                  <h3>Wireframes & Testing</h3>
+                    <p>Using the content strategy, sitemap and user flows, I built low fidelity wireframes.  After sketching a few quick iterations, I finalized the wireframes in Figma.  The wireframes were used to create a clickable prototype in Invision to user test.</p>
+                    <h4>User Testing & Prototype</h4>
+                    <p>Testing was conducted in person and remotely using Skype with a test script. Feedback indicated the organize and move features needed to be redesigned to have greater visual prominence.  Also, CTA’s needed to be relocated for better findability.</p>
+                    <div class="btn_shell">
+                      <a href="https://invis.io/6MOXK3JF8YQ" class="btn btn_sec dark_btn">View Lo-Fi Prototype</a>
+                    </div>
+                </div>
+              </div>
+              <!-- Images of Interface changes -->
+              <div class="lofi_changes">
+                <figure class="change-screen-cont">
+                  <div class="figcap-shell">
+                    <figcaption class="label">Before</figcaption>
+                  </div>
+                  <div class="change-screen">
+                    <div class="lofi-orig" alt="screenshot of the adding a file interface with call to action buttons located at the bottom right"></div>
+                  </div>
+                </figure>
+                <figure class="change-screen-cont">
+                  <div class="figcap-shell">
+                    <figcaption class="label">After</figcaption>
+                  </div>
+                  <div class="change-screen">
+                    <div class="lofi-upd" alt="screenshot of an updated add file interface with buttons located on the top right and a new dropdown showing file location on the top left of the title bar.">
+                    </div>
+                  </div>
+                </figure>
+              </div>
+            </div>
+        </section>
+        <!-- Section - Branding & Identity -->
+        <section class="brand">
+            <!-- Brand Story & logo -->
+            <div class="story grid">
+              <div class="section_num four">
+                <img src="images/04.png">
+              </div>
+              <div class="sub_sec story_shell section">
+                <div>
+                  <h2 class="ib_h">04_Branding & Identity</h2>
+                  <h3>Brand Story & Logo</h3>
+                  <p>Developing the concept for the brand began with brainstorming and mind mapping.  After conducting preference tests on two options, I decided on the name Ideabase. The brand story is inspired by the six components utilized when managing and unifying communities. Ideabase seeks to be friendly, reliable, and intelligently helpful while increasing efficiency.</p>
+                </div>
+              </div>
+              <div class="logo_proc">
+                <div class="lg_left"></div>
+                <div class="lg_right"></div>
+              </div>
+              <div class="sub_sec logo_shell section">
+                <p>The Ideabase logo is built on three concepts:  an abstraction of the letters i and b, a project container housing your thoughts and ideas, and the concept of connection.</p>
+              </div>
+              <div class="cent_img"></div>
+              <div class="lm_shell project">
+                <div class= "lm_col">
+                  <div>
+                    <img class="limg" src="images/lg_prim.svg" alt="Primary horizontal logo"/>
+                  </div>
+                  <div>
+                    <img class="limg" src="images/lg_dark.svg" alt="Dark horizontal logo" />
+                  </div>
+                  <div>
+                    <img class="limg_dk" src="images/lg_white.svg" alt="White horizontal logo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Typography -->
+            <div class="type grid section">
+              <div class="sub_sec t_shell">
+                <div>
+                  <h3>Typography</h3>
+                  <p>The typography was chosen to support ideas of unification and collaboration.</p>
+                </div>
+              </div>
+              <div class="type_shell">
+                <div class ="typ_cont typ_right">
+                  <div class="img_typ_1" alt="Faricy New is a geometric typeface with a high x-height and ensures clear legibility from distances">
+                  </div>
+                </div>
+                <div class="typ_cont">
+                  <div class="img_typ_2" "Lato is warm and geometric with humanist elements.  Lato has great flexibility while maintaining distinctiveness between weights.">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Color Palette-->
+            <div class="color grid section">
+              <div class="sub_sec col_shell">
+                  <h3>Colors</h3>
+                  <p>The main identity palette used colors that supported concepts of reliability and simplicity. Calm blue was used as the primary color and Burgeon black and secondary color.</p>
+              </div>
+              <div class="swatch_cont sectright">
+                <div class="shell">
+                  <div class="swatch small">
+                      <div class="col1">
+                        <div class="colcont">#109AFE</div>
+                      </div>
+                      <div class="col2">
+                        <div class="colcont">#302C2C</div>
+                      </div>
+                      <div class="col3">
+                        <div class="colcont">#F0C048</div>
+                      </div>
+                      <div class="col4">
+                        <div class="colcont">#FF5F52</div>
+                      </div>
+                      <div class="col5">
+                        <div class="colcont">#5E5C5C</div>
+                      </div>
+                      <div class="col6">
+                        <div class="colcont">#ACA9A5</div>
+                      </div>
+                      <div class="col7">
+                        <div class="colcont">#EFEBE9</div>
+                      </div>
+                      <div class="col8">
+                        <div class="colcont">#F4F2F1</div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Style Guide -->
+            <div class="guide grid project">
+              <div class="sub_sec guide_shell">
+                <div class="guide_inner">
+                  <h3>Style Guide</h3>
+                  <p>All of the branding components were then assembled into a style guide to begin defining patterns and ensure the maintainability of the brand identity moving forward in the design process.</p>
+                  <div class="btn_shell">
+                    <a href="https://docs.google.com/presentation/d/1IHQjFUogRnysFSvWK0AOqrwF-qo7k0Ih-dWIbP5OIUs/edit?usp=sharing" class="btn_sec dark_btn">View Style Guide</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Slideshow container -->
+              <div class="slide_cont">
+                <img class="sgSlides " src="images/style_01cover.jpg" />
+                <img class="sgSlides" src="images/style_02overview.jpg" />
+                <img class="sgSlides" src="images/style_03logo.jpg" />
+                <img class="sgSlides" src="images/style_04logo.jpg" />
+                <img class="sgSlides" src="images/style_05logo.jpg" />
+                <img class="sgSlides" src="images/style_06color.jpg" />
+                <img class="sgSlides" src="images/style_07typo.jpg" />
+                <img class="sgSlides" src="images/style_08typo.jpg" />
+                <img class="sgSlides" src="images/style_09typo.jpg" />
+                <img class="sgSlides" src="images/style_10typo.jpg" />
+                <img class="sgSlides" src="images/style_11tone.jpg" />
+                <img class="sgSlides" src="images/style_12icon.jpg" />
+                <img class="sgSlides" src="images/style_13button.jpg" />
+                <button class="slide_btn display_left" onclick="plusDivs(-1)">&#8249;</button>
+                <button class="slide_btn  display_right" onclick="plusDivs(+1)">&#8250;</button>
+              </div>
+            </div>
+        </section>
+        <!-- Section - Visual Design -->
+        <section class="visual grid section">
+          <div class="section_num">
+            <img src="images/05.png">
+          </div>
+          <!-- HiFi Prototype -->
+          <div class="hifi_prot">
+            <div class="sub_sec">
+              <div>
+                <h2 class="ib_h">05_Visual Design</h2>
+                <h3>High Fidelity Prototype</h3>
+                <p>Using the feedback from wireframe testing and branding, I created a high fidelity mockup in Figma and then converted it to a clickable prototype.</p>
+                <div class="dbl_btn_cont">
+                    <a href="https://invis.io/QUJJSLC94JA" class="btn_dbl dark_btn btn">Laptop Prototype</a>
+                    <a href="https://invis.io/VNJJSOO3AEB" class="btn_dbl btn blue_btn">Mobile Prototype</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- User Testing -->
+          <div class="user_test grid">
+            <div class="sub_sec ut_shell">
+              <div>
+                <h4>User Testing</h4>
+                <p>After another round of user testing conducted remotely with Maze, I was able to identify areas of improvement and integrate into the final prototype.  Here is the evolution of the dashboard from start to finish.</p>
+              </div>
+            </div>
+            <div class="hifi-changes hifi_one grid">
+              <div class="change_title center">
+                <h4>Dashboard Design</h4>
+              </div>
+              <div class="change_shell hifi_before section">
+                <figure class="hifi-change-cont">
+                  <div class="figcap_shell">
+                    <figcaption class="label">Before</figcaption>
+                  </div>
+                  <div class="change-screen">
+                    <div class="hifi-dash-orig" alt="Color screenshot of the dashboard with a full screen grid of files and drop down menu located on the title bar."></div>
+                  </div>
+                </figure>
+              </div>
+              <div class="img-descrip desc_bfr">
+                <p>User tested drop-down navigation, recent and alphabetical sort feature for quicker wayfinding, and A/B tested logo color.</p>
+              </div>
+              <div class="change_shell hifi_after section">
+                <figure class="hifi-change-cont">
+                  <div class="figcap_shell">
+                    <figcaption class="label">After</figcaption>
+                  </div>
+                  <div class="change-screen">
+                    <div class="hifi-dash-upd" alt="Color screenshot of an updated dashboard interface with with vertical navigation replacing dropdown menu.">
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <div class="img-descrip desc_aft">
+                  <p>Add a vertical navigation bar for filtering content, changed the logo to monotone because it was a more intuitive experience between mobile and desktop.</p>
+              </div>
+              <div class="ch_bck"></div>
+            </div>
+            <div class="hifi-changes hifi_two grid">
+              <div class="change_title center">
+                <h4>File Viewing Design</h4>
+              </div>
+              <div class="change_shell hifi_before section">
+                <figure class="hifi-change-cont">
+                  <div class="figcap_shell">
+                    <figcaption class="label">Before</figcaption>
+                  </div>
+                  <div class="change-screen">
+                    <div class="hifi-add-orig" alt="Color screenshot of the adding a file interface with chat features and tagging options.">
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <div class="img-descrip desc_bfr">
+                <p>User tested moving file location, adding comments, returning to the dashboard.</p>
+              </div>
+              <div class="change_shell hifi_after section">
+                <figure class="hifi-change-cont">
+                  <div class="figcap_shell">
+                    <figcaption class="label">After</figcaption>
+                  </div>
+                  <div class="change-screen">
+                    <div class="hifi-add-upd" alt="Color screenshot of an updated add file interface add tag icon located to the left of the tag titles.">
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <div class="img-descrip desc_aft">
+                <p>Added tag icon to ensure better findability of the tagging features.</p>
+              </div>
+              <div class="ch_bck"></div>
+            </div>
+          </div>
+          </section>
+        <section class="conclusion grid project">
+          <!-- Conclusion -->
+            <div class="concl_img_back">
+              <div class="cncl_desk_img ci1">
+              </div>
+              <div class="concl_phn_img1 ci2">
+              </div>
+              <div class="concl_phn_img2 ci3">
+              </div>
+            </div>
+            <div class="sub_sec concl_shell section">
+                <h3>Conclusion</h3>
+                <p>Ideabase was a project that taught me the importance of testing throughout this design process.  Knowing that simplicity was a priority, user testing helped me to determine when the design had crossed from obviously simple to confusing. Testing allowed for quick iteration and discovery of unidentified problems which resulted in a far improved final product and inspired a more informed solution.  The refinement of responsive elements within this project developed my ability to design a better, more cohesive structure between mobile and desktop. Moving forward, my priority is to add more functionality to the organization and tagging features.  Users indicated this is of high importance and would add overall value to the product beyond the MVP.</p>
+            </div>
+            <div class="line"></div>
+        </section>
+        <!-- Section - More Projects -->
+        <!-- <section class="more_proj">
+          <div>
+            <div class="back_btn">
+              <a href="index.html" class="btn_small"><img src="images/back.jpg"></a>
+            </div>
+            <div>
+              <h3>More Projects</h3>
+            </div>
+            <div class="next_btn">
+              <a href="index.html" class="btn_small"><img src="images/next.jpg"></a>
+            </div>
+          </div>
+        </section> -->
       </div>
         <!-- footer -->
       <footer>
