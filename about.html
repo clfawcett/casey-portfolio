@@ -17,47 +17,31 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   </head>
   <body>
-  <div class="container load_cont">
-    <header>
-      <div id="menu_links">
-        <div class="menu_content" id="slideMenu">
-          <div class="menu_navbar">
-            <a href="index.html" class="logo"><img src="images/logo_white_m.png"></a>
-            <button id="close_nav" onclick="closeNavMenu()" class="closebtn">x</button>
-          </div>
-          <ul class="menu_nav_links">
-            <li><a href="index.html#work" onclick="closeNavMenu()">WORK</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="resume.html">RESUME</a></li>
-            <li><a href="mailto:caseyfawcett@gmail.com">CONTACT</a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <!-- Nav -->
-    <nav id="pagenav">
-      <ul>
-        <li class="nav_logo">
-          <a href="index.html" class="logo"><img id="navlogo" src="images/logo_dark_m.svg"></a>
-        </li>
-        <li class="nav_menu" id="navmenu">
-          <button onclick="openNavMenu()" id="slidebtn" class="nav_menu_btn btn hmenu">Menu</button>
-        </li>
-        <li class="nav_expmenu">
-          <div class="exp_menu">
-            <ul>
-              <li><a href="index.html#work">Work</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="mailto:caseyfawcett@gmail.com">Contact</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </nav>
-    <div class="main about">
+  <div class="container">
+    <header id="load">
+      <!-- Nav -->
+      <nav id="pagenav">
+        <ul>
+          <li class="nav_logo">
+            <a href="index.html" class="logo"><img id="navlogo" src="images/logo_dark_m.svg"></a>
+          </li>
+          <li class="nav_menu" id="navmenu">
+            <button onclick="openNavMenu()" id="slidebtn" class="nav_menu_btn btn hmenu">Menu</button>
+          </li>
+          <li class="nav_expmenu">
+            <div class="exp_menu">
+              <ul>
+                <li><a href="index.html#work">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="mailto:caseyfawcett@gmail.com">Contact</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Hero -->
       <section class="hero2">
-        <!-- Hero -->
         <div class="about_img">
           <div class="portf_img"></div>
         </div>
@@ -73,6 +57,22 @@
         </div>
         <div class="about_background"></div>
       </section>
+    </header>
+    <div id="menu_links">
+      <div class="menu_content" id="slideMenu">
+        <div class="menu_navbar">
+          <a href="index.html" class="logo"><img src="images/logo_white_m.png"></a>
+          <button id="close_nav" onclick="closeNavMenu()" class="closebtn">x</button>
+        </div>
+        <ul class="menu_nav_links">
+          <li><a href="index.html#work" onclick="closeNavMenu()">WORK</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="resume.html">RESUME</a></li>
+          <li><a href="mailto:caseyfawcett@gmail.com">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main about">
       <!--The Beginning -->
       <section class="beginning ab_grid grid section">
         <div class="sub_sec beg_shell">
@@ -205,6 +205,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/scrollmagic.js"></script>
     <script src="js/nav.js"></script>
   </body>
