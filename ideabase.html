@@ -15,6 +15,8 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!--font -->
+    <link rel="stylesheet" href="https://use.typekit.net/zdc3ueh.css">
   </head>
   <body>
     <div class="container">
@@ -34,7 +36,7 @@
                   <li><a href="index.html#work">Work</a></li>
                   <li><a href="about.html">About</a></li>
                   <li><a href="resume.html">Resume</a></li>
-                  <li><a href="mailto:caseyfawcett@gmail.com">Contact</a></li>
+                  <li><a href="contact.html">Contact</a></li>
                 </ul>
               </div>
             </li>
@@ -54,7 +56,7 @@
             </div>
           </div>
           <div class="btn_shell_proj">
-            <a href="ideabase.html" class="btn btn_small dark_btn">View Prototype</a>
+            <a href="ideabase.html" class="btn btn_small dark_btn" target="_blank">View Prototype</a>
           </div>
           <div class="hero_background"></div>
         </section>
@@ -69,7 +71,7 @@
             <li><a href="index.html#work" onclick="closeNavMenu()">WORK</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="resume.html">RESUME</a></li>
-            <li><a href="mailto:caseyfawcett@gmail.com">CONTACT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </div>
       </div>
@@ -113,7 +115,7 @@
           </div>
         </section>
         <!-- Section - Problem-->
-        <section class="problem section">
+        <section class="problem section grid">
           <div class="prob_cont">
             <div>
               <h2 class="ib_h">Problem</h2>
@@ -153,9 +155,12 @@
                   <img src="images/icon_research.svg">
                 </div>
                 <div class="pc1">
-                  <h4>01 Research & Define</h4>
-                  <p>Competitive Analysis
-                    <br>User Research</p>
+                  <a href="#research">
+                    <h4>01 Research & Define</h4>
+                    <p>Competitive Analysis
+                      <br>User Survey</p>
+                  </a>
+
                 </div>
                 <div class="vert2 hor">
                   <hr/>
@@ -164,9 +169,12 @@
                   <img src="images/icon_strategy.svg">
                 </div>
                 <div class="pc2">
-                  <h4>02 Strategy</h4>
-                  <p>User Personas
-                    <br>User Stories</p>
+                  <a href="#strategy">
+                    <h4>02 Strategy</h4>
+                    <p>User Personas
+                      <br>User Stories</p>
+                  </a>
+
                 </div>
                 <div class="vert3 hor">
                   <hr />
@@ -175,9 +183,11 @@
                  <img src="images/icon_ia.svg">
                 </div>
                 <div class="pc3">
-                  <h4>03 Information Architecture</h4>
-                  <p>User Flows & Sitemaps
+                  <a href="#ia">
+                    <h4>03 Information Architecture</h4>
+                    <p>User Flows & Sitemaps
                     <br>Wireframes & Testing</p>
+                  </a>
                 </div>
                 <div class="vert4 hor">
                   <hr />
@@ -186,9 +196,12 @@
                   <img src="images/icon_branding.svg">
                 </div>
                 <div class="pc4">
-                  <h4>04 Branding & Identity</h4>
-                    <p>Brand Story & Logo
-                      <br>Style Guide</p>
+                  <a href="#brand">
+                    <h4>04 Branding & Identity</h4>
+                      <p>Brand Story & Logo
+                        <br>Style Guide</p>
+                  </a>
+
                 </div>
                 <div class="vert5 hor">
                   <hr />
@@ -197,9 +210,12 @@
                   <img src="images/icon_visual.svg">
                 </div>
                 <div class="pc5">
-                  <h4>05 Visual Design</h4>
-                      <p>High Fidelity Prototype
+                  <a href="#visual">
+                    <h4>05 Visual Design</h4>
+                    <p>High Fidelity Prototype
                         <br>User Testing</p>
+                  </a>
+
                 </div>
                 <div class="longline">
                   <hr />
@@ -211,7 +227,7 @@
           </div>
         </section>
         <!-- Section - Research & Define -->
-        <section class="research grid">
+        <section class="research grid" id="research">
             <div class="section_num one">
               <img src="images/01.png">
             </div>
@@ -221,6 +237,20 @@
                 <h2 class="ib_h">01_Research & Define</h2>
                 <h3>Competitive Analysis</h3>
                 <p>To better understand the cloud and productivity market, I began research and analysis on competitors like Dropbox, Evernote, and Pinterest. SWOT analysis and user flow mapping revealed gaps in current services and untapped opportunities for a new product with a focus on simplicity, visual organization, and collaboration.</p>
+                <ul class="p_ul">
+                  <li>
+                    <p>Dropbox has a longstanding reputation and offers a diverse set of features.   Security threats, and keeping up with current design trends has posed problems.</p>
+                  </li>
+                  <li>
+                    <p>Evernote is known for its advanced clipping features and convenient scanning.  These features streamline the process of adding content.  Navigation can be confusing and has limitations on text and image formatting options.</p>
+                  </li>
+                  <li>
+                    <p>Pinterest is a heavily visual and has an intuitive interface making it easy to collaborate and share content.  It offers limited organization and editing features.</p>
+                  </li>
+                </ul>
+                <div class="btn_shell">
+                  <a href="https://docs.google.com/spreadsheets/d/1LEEBD0RoFe0OTSYa9JCF0bMw7QJCCGPlUwznPcpofq4/edit?usp=sharing" class="btn btn_sec second_btn" target="_blank">View SWOT Analysis</a>
+                </div>
                 <div class="competitors">
                   <div>
                     <img src="images/icon_pinterest.png">
@@ -233,16 +263,32 @@
                   </div>
                 </div>
               </div>
-
             </div>
             <!-- User Research -->
             <div class="user_research section">
               <div class="ur_img"></div>
               <div class="ur_content">
                 <div class="ur_inner">
-                  <h3>User Research</h3>
+                  <h3>User Survey</h3>
                   <h4>Survey & Interviews</h4>
                   <p>The first step was to create a survey and post to multiple public forums and social media platforms.  The questions focused on defining how respondents organize and store content, use priorities, current solutions, and frustrations.  The resulting data revealed opportunites to solve problems.  Using respondents from the survey, I conducted interviews to refine the problem and begin to structure the solution.</p>
+                  <ul class="p_ul">
+                    <li>
+                      <p>Determining the currently used cloud storage and organization websites/apps</p>
+                    </li>
+                    <li>
+                      <p>The benefits and frustrations of current tools</p>
+                    </li>
+                    <li>
+                      <p>Interest in sharing and collaboration features</p>
+                    </li>
+                    <li>
+                      <p>Desired features for organization and collaboration projects</p>
+                    </li>
+                  </ul>
+                  <div class="btn_shell">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0u5DGg4MeUCdgNPfO16bcEQcPj7-GyrePoWrAbA_-dwPhRA/viewform?usp=sf_link" class="btn btn_sec second_btn" target="_blank">View Survey</a>
+                  </div>
                 </div>
               </div>
               <!-- Chart Js -->
@@ -315,7 +361,7 @@
             </div>
         </section>
         <!-- Section - Strategy -->
-        <section class="strategy grid">
+        <section class="strategy grid" id="strategy">
           <div class="section_num two">
             <img src="images/02.png">
           </div>
@@ -436,14 +482,171 @@
             <div class="sub_sec us_shell">
               <div>
                 <h3>User Stories</h3>
-                <p>To establish features, I compiled research data and created a list of user stories of potential tasks of new and returning users.  These user stories were refined and prioritized to define MVP.</p>
+                <p>To establish features, I compiled research data and created a list of user stories of potential tasks of new and returning users as well as common tasks of both types of users. These user stories were refined and prioritized to define MVP.</p>
+                <ul class="p_ul">
+                  <li>
+                    <p>Creating and logging in to an account</p>
+                  </li>
+                  <li>
+                    <p>Uploading and creating content</p>
+                  </li>
+                  <li>
+                    <p>Sharing and collaborating</p>
+                  </li>
+                  <li>
+                    <p>Tagging and organizing files and projects</p>
+                  </li>
+                </ul>
                 <div class="btn_shell">
-                  <a href="https://docs.google.com/spreadsheets/d/1-e1HsG4ZpSMmfmL_mfIuk6IE0s2fri3URgbYWGDh3lc/edit?usp=sharing" class="btn btn_sec dark_btn">View Stories</a>
+                  <a href="https://docs.google.com/spreadsheets/d/1-e1HsG4ZpSMmfmL_mfIuk6IE0s2fri3URgbYWGDh3lc/edit?usp=sharing" class="btn btn_sec light_btn" target="_blank">View Stories</a>
                 </div>
               </div>
             </div>
+            <div class="us_table_shell">
+              <div>
+                <h4>Tasks of a new user </h4>
+              </div>
+              <div class="us_table_cont">
+                <table class="us_table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Role</th>
+                      <th scope="col">Tasks</th>
+                      <th scope="col">Rank</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to create an account</td>
+                      <td>High</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to upgrade my account</td>
+                      <td>High</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to sign in with my social account</td>
+                      <td>High</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to upload a file</td>
+                      <td>High</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to upload a folder of files from my computer</td>
+                      <td>High</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to create a note</td>
+                      <td>Medium</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to create a document</td>
+                      <td>Medium</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to create a form</td>
+                      <td>Medium</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to create a spreadsheet</td>
+                      <td>Medium</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to add a tag to a file</td>
+                      <td>Medium</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to add a tag to a folder </td>
+                      <td>Medium</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to create a folder </td>
+                      <td>Medium</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to edit a document</td>
+                      <td>Medium</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to delete a folder</td>
+                      <td>Medium</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to rename a file</td>
+                      <td>Medium</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to rename a folder</td>
+                      <td>Medium</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to download a file</td>
+                      <td>Medium</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to log out of my account</td>
+                      <td>Medium</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want look at the permissions of sharing a file</td>
+                      <td>low</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to edit my profile</td>
+                      <td>low</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to save a link from the web to a file</td>
+                      <td>Low</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to save a link from the web to a file</td>
+                      <td>Low</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to limit who can edit my files</td>
+                      <td>Low</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to search for a file</td>
+                      <td>Low</td>
+                    </tr>
+                    <tr>
+                      <td>As a new user</td>
+                      <td>I want to share an item</td>
+                      <td>Low</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
             <!-- Icons -->
-            <div class="us_grid project">
+            <!-- <div class="us_grid project">
               <div class="us1">
                 <div class="usi">
                   <img src="images/icon_uploading.svg" alt="An illustration of a two files.">
@@ -482,11 +685,11 @@
                   <p>Tag and organize content into projects easing the process of finding content.</p>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </section>
         <!-- Information Architecture -->
-        <section class="ia grid">
+        <section class="ia grid" id="ia">
             <div class="section_num three">
               <img src="images/03.png">
             </div>
@@ -496,7 +699,7 @@
                 <h3> User Flows & Sitemaps</h3>
                 <p>While keeping the personas in mind, I began with sketching out multiple iterations of the onboarding, uploading, upgrading, organizing, and collaborating user flows.  After evaluation, I distilled the process and mapped out the final flows.  User flows were then used to create a sitemap and initial content strategy.</p>
                 <div class="btn_shell">
-                  <a href="https://drive.google.com/open?id=1Pawflojj7PK5tcqQ3fOH3ieptZ1eh1Lf" class="btn btn_sec dark_btn">View Flows</a>
+                  <a href="https://drive.google.com/open?id=1Pawflojj7PK5tcqQ3fOH3ieptZ1eh1Lf" class="btn btn_sec second_btn" target="_blank">View Flows</a>
                 </div>
               </div>
             </div>
@@ -520,7 +723,7 @@
                     <h4>User Testing & Prototype</h4>
                     <p>Testing was conducted in person and remotely using Skype with a test script. Feedback indicated the organize and move features needed to be redesigned to have greater visual prominence.  Also, CTA’s needed to be relocated for better findability.</p>
                     <div class="btn_shell">
-                      <a href="https://invis.io/6MOXK3JF8YQ" class="btn btn_sec dark_btn">View Lo-Fi Prototype</a>
+                      <a href="https://invis.io/6MOXK3JF8YQ" class="btn btn_sec second_btn" target="_blank">View Lo-Fi Prototype</a>
                     </div>
                 </div>
               </div>
@@ -547,7 +750,7 @@
             </div>
         </section>
         <!-- Section - Branding & Identity -->
-        <section class="brand">
+        <section class="brand" id="brand">
             <!-- Brand Story & logo -->
             <div class="story grid">
               <div class="section_num four">
@@ -604,10 +807,21 @@
             <!-- Color Palette-->
             <div class="color grid section">
               <div class="sub_sec col_shell">
+                <div>
                   <h3>Colors</h3>
-                  <p>The main identity palette used colors that supported concepts of reliability and simplicity. Calm blue was used as the primary color and Burgeon black and secondary color.</p>
+                  <p>The main identity palette used colors that supported concepts of reliability and simplicity. The high contrast between the dark gray, white, and tri-color palette creates clear connections to product features.
+                    <ul class="p_ul">
+                      <li><p>The primary color is calm blue to emphasize trust and security and is used on call to actions and sharing content.</p>
+                      </li>
+                      <li>
+                        <p>Burgeon black reflects the quality of the product and is used in body text and headings, and backgrounds</p>
+                      </li>
+                      <li><p>Subdued red and yellow add energy and direct user flows.</p>
+                      </li>
+                    </ul>
+                </div>
               </div>
-              <div class="swatch_cont sectright">
+              <div class="swatch_cont project">
                 <div class="shell">
                   <div class="swatch small">
                       <div class="col1">
@@ -645,7 +859,7 @@
                   <h3>Style Guide</h3>
                   <p>All of the branding components were then assembled into a style guide to begin defining patterns and ensure the maintainability of the brand identity moving forward in the design process.</p>
                   <div class="btn_shell">
-                    <a href="https://docs.google.com/presentation/d/1IHQjFUogRnysFSvWK0AOqrwF-qo7k0Ih-dWIbP5OIUs/edit?usp=sharing" class="btn_sec dark_btn">View Style Guide</a>
+                    <a href="https://docs.google.com/presentation/d/1IHQjFUogRnysFSvWK0AOqrwF-qo7k0Ih-dWIbP5OIUs/edit?usp=sharing" class="btn_sec second_btn">View Style Guide</a>
                   </div>
                 </div>
               </div>
@@ -670,7 +884,7 @@
             </div>
         </section>
         <!-- Section - Visual Design -->
-        <section class="visual grid section">
+        <section class="visual grid section" id="visual">
           <div class="section_num">
             <img src="images/05.png">
           </div>
@@ -682,8 +896,8 @@
                 <h3>High Fidelity Prototype</h3>
                 <p>Using the feedback from wireframe testing and branding, I created a high fidelity mockup in Figma and then converted it to a clickable prototype.</p>
                 <div class="dbl_btn_cont">
-                    <a href="https://invis.io/QUJJSLC94JA" class="btn_dbl dark_btn btn">Laptop Prototype</a>
-                    <a href="https://invis.io/VNJJSOO3AEB" class="btn_dbl btn blue_btn">Mobile Prototype</a>
+                    <a href="https://invis.io/QUJJSLC94JA" class="btn_dbl second_btn btn" target="_blank">Laptop Prototype</a>
+                    <a href="https://invis.io/VNJJSOO3AEB" class="btn_dbl btn second_btn" target="_blank">Mobile Prototype</a>
                 </div>
               </div>
             </div>
@@ -804,7 +1018,7 @@
           </div>
           <!-- Social Icons -->
           <ul class="social">
-            <li class="icon1">  <a href="mailto:caseyfawcett@gmail.com"><i class="far fa-envelope fa-2x white" aria-hidden="true"></i></a></li>
+            <li class="icon1">  <a href="contact.html"><i class="far fa-envelope fa-2x white" aria-hidden="true"></i></a></li>
             <li class="icon2"> <a href="https://dribbble.com/cfdesign"> <i class="fab fa-dribbble fa-2x white" aria hidden="true"></i></a></li>
             <li class="icon3"><a href="https://github.com/clfawcett"><i class="fab fa-github fa-2x white" aria-hidden="true"></i></a></li>
             <li class="icon4"><a href="https://www.linkedin.com/in/casey-fawcett-31504512/"><i class="fab fa-linkedin-in fa-2x white" aria-hidden="true"></i></a></li>
