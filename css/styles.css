@@ -266,7 +266,7 @@ li p {
 
 .primary_btn {
   background: #3DA79A;
-  color: #414141;
+  color: #FFF;
   font-weight: bold;
 }
 
@@ -309,10 +309,10 @@ li p {
 
 .btn_sec {
   align-items: center;
-  border-radius: .4rem;
+  /* border-radius: .4rem; */
   display: flex;
   flex-grow: 1;
-  height: 6.4rem;
+  height: 5.5rem;
   justify-content: center;
 }
 
@@ -1794,16 +1794,43 @@ tr:nth-child(odd) td {
 
 
 /********** Contact Page **********/
+.contact {
+  background-image: linear-gradient(#C4E0EC, #109AFE);
+  display: flex;
+  justify-content: center;
+  padding-top: 10.8vh;
+}
+
+.contact_intro {
+  background-color: #F2EFED;
+}
+
+.contact_inner {
+  padding: 6vh 6.4vw 0 6.4vw;
+}
+
+.cont_img_shell {
+  display: flex;
+  padding-bottom: 1.6rem;
+}
+
+.contact_img {
+  max-height: 9.6vh;
+}
+
+
+.contact_inner p {
+  max-width: 48rem;
+}
 
 .form_shell {
-  margin-top: 10.8vh;
 }
 
 .contact_form {
   background-color: #F2EFED;
   margin: 0 auto;
-  padding: 2.4rem;
-  width: 40rem;
+  padding: 2.4rem 6.4vw 6.4rem 6.4vw;
+  /* width: 40rem; */
 }
 
 .contact_form div + div {
@@ -3223,12 +3250,37 @@ textarea {
     }
 
   /**********     Contact Page     **********/
+  .contact {
+    padding: 18.2vh 8.4vw 7.4vh 8.4vw;
+  }
 
-    .form_shell {
-      grid-area: 1/8/1/12;
-      margin: 7.2rem 0;
+  .contact_intro {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+  }
 
-    }
+  .contact_inner {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vh 6.4vw 4vh 6.4vw;
+  }
+
+  .contact_img {
+    max-height: 12.6vh;
+  }
+
+
+  .form_shell {
+    background-color: #F2EFED;
+    padding: 4rem 0;
+  }
+
+  .contact_form {
+    padding: 4rem 5vw;
+  }
 
   /**********     Footer      **********/
 

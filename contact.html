@@ -42,16 +42,6 @@
           </li>
         </ul>
       </nav>
-      <!-- Hero -->
-      <section class="cont_form">
-        <div class="contact_img">
-          <div class="cont_logo_animation"></div>
-          <div>
-            <h3>Get in touch </h3>
-          </div>
-        </div>
-
-      </section>
     </header>
     <div id="menu_links">
       <div class="menu_content" id="slideMenu">
@@ -67,33 +57,35 @@
         </ul>
       </div>
     </div>
-    <div class="main contact grid">
+    <div class="main contact">
       <div class="contact_intro">
-        <div>
-          
+        <div class="contact_inner">
+          <div class="cont_img_shell">
+            <img  class="contact_img" src="images/cf_logo.svg" alt="Casey's personal logo, interconnected looping letters c and f">
+          </div>
+          <h3>Get in touch</h3>
+          <p>Want to work together,  grab a cup of tea, or answer any questions?  Send me a message!</p>
         </div>
-        <h3>Get in touch</h3>
-        <p>Want to work together,  grab a cup of tea, or answer any questions?  Send me a message!</p>
-      </div>
-      <!-- Form -->
-      <div class="form_shell">
-        <form action="/my-handling-form-page" method="post" class="contact_form">
-          <div>
-            <label for="name">Full Name</label>
-            <input type="text" id:"name" name:"user_name" placeholder="Enter your name"/>
-          </div>
-          <div>
-            <label for="mail">E-mail</label>
-            <input type="email" id:"mail" name:"user_mail" placeholder="username@email.com"/>
-          </div>
-          <div>
-            <label for="msg">Message</label>
-            <textarea id:"msg" name:"user_message"></textarea>
-          </div>
-          <div class="button">
-            <button type="submit" class="form_btn dark_btn btn">Send Message</button>
-          </div>
-        </form>
+        <!-- Form -->
+        <div class="form_shell">
+          <form action="https://formspree.io/caseyfawcett@gmail.com" method="POST" class="contact_form">
+            <div>
+              <label for="name">Full Name</label>
+              <input type="text" id:"name" name:"user_name" placeholder="Enter your name"/>
+            </div>
+            <div>
+              <label for="mail">E-mail</label>
+              <input type="email" id:"mail" name:"user_mail" placeholder="username@email.com"/>
+            </div>
+            <div>
+              <label for="msg">Message</label>
+              <textarea id:"msg" name:"user_message"></textarea>
+            </div>
+            <div class="button">
+              <button type="submit" class="form_btn primary_btn btn">Send Message</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <!-- footer -->
