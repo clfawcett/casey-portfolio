@@ -45,7 +45,8 @@ $(document).ready(function(){
       //build a fade-in scene
       var ourScene = new ScrollMagic.Scene({
         triggerElement: this.children[0],
-        triggerHook: 0.9
+        triggerHook: 0.9,
+        reverse: false
       })
       .setClassToggle(this, 'fade-in')
       .addTo(controller);
@@ -57,7 +58,8 @@ $(document).ready(function(){
       //build a fade-in scene
       var ourScene = new ScrollMagic.Scene({
         triggerElement: this.children[0],
-        triggerHook: 0.9
+        triggerHook: 0.9,
+        reverse: false
       })
       .setClassToggle(this, 'fade-in')
       .addTo(controller);
@@ -69,7 +71,8 @@ $(document).ready(function(){
       //build a fade-in scene
       var ourScene = new ScrollMagic.Scene({
         triggerElement: this.children[0],
-        triggerHook: 0.9
+        triggerHook: 0.9,
+        reverse: false
       })
       .setClassToggle(this, 'fade-in')
       .addTo(controller);
@@ -81,7 +84,8 @@ $(document).ready(function(){
       //build a fade-in scene
       var ourScene = new ScrollMagic.Scene({
         triggerElement: this.children[0],
-        triggerHook: 0.9
+        triggerHook: 0.9,
+        reverse: false
       })
       .setClassToggle(this, 'fade-in')
       .addTo(controller);

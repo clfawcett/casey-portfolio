@@ -25,10 +25,9 @@ html {
 body {
   background-color: #FFF;
   color: #414141;
-  font-family: 'Lato', Arial, sans-serif;
+  font-family: 'lato', sans-serif;
   font-weight: 400;
 }
-
 
 nav {
   background-color: #fff;
@@ -66,8 +65,8 @@ footer {
 /**** typography ****/
 
 
-h1, h2, h3, h4, .description, .quote, .cite, .logotype {
-  font-family: 'Halyard Display', 'Helvetica-Neue', Arial, Sans-Serif;
+h1, h2, h3, h4, caption, .description, .quote, .cite, .logotype {
+  font-family: 'halyard-display', sans-serif;
 }
 
 h1 {
@@ -117,10 +116,29 @@ a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
+caption {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  margin-bottom: 2.4rem;
+  text-transform: capitalize;
+}
+
+td, th {
+  font-family: 'lato', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
 
 strong{
   font-weight: 400;
 }
+
+li p {
+  margin-bottom: 1.2rem;
+}
+
 
 .small {
   font-size: 1.2rem;
@@ -138,7 +156,7 @@ strong{
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 3.3rem;
-  max-width: 47.2rem;
+  max-width: 100vw;
 }
 
 .cite {
@@ -151,7 +169,7 @@ strong{
 .btn, .label{
   border: none;
   color: #414141;
-  font-family: 'Lato', Arial, sans-serif;
+  font-family: 'lato', sans-serif;
   font-size: 1.6rem;
   line-height: 2.5rem;
   text-align: center;
@@ -173,6 +191,18 @@ strong{
   font-weight: 300;
 }
 
+.p_ul {
+  list-style: disc;
+  margin-left: 3.2rem;
+  margin-bottom: 2.8rem;
+}
+
+.per_ul {
+  list-style: disc;
+  margin-left: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
 .inner_content > h4 {
   text-transform: uppercase;
 }
@@ -180,6 +210,8 @@ strong{
 .ib_h {
   color: #109AFE;
 }
+
+
 
 
 /**** buttons  ****/
@@ -224,7 +256,7 @@ strong{
 }
 
 .dark_btn:hover, .dark_btn:focus {
-  background-color: #484848;
+  background-color: #767273;
 }
 
 .dark_btn {
@@ -234,7 +266,7 @@ strong{
 
 .primary_btn {
   background: #3DA79A;
-  color: #414141;
+  color: #FFF;
   font-weight: bold;
 }
 
@@ -242,19 +274,45 @@ strong{
   background-color: #5EBDB2;
 }
 
+.second_btn {
+  background-color: #414141;
+  color: #fff;
+}
+
+.second_btn:hover, .second_btn:focus {
+  background-color: rgba(0, 0, 0, 0);
+  border: .2rem solid #414141;
+  color: #414141;
+  font-weight: bold;
+}
+
 .blue_btn {
-  background: #109AFE;
+  background-color: #109AFE;
+  color: #FFF;
 }
 
 .blue_btn:hover, .blue_btn:focus {
   background-color: #40A2E9;
 }
 
+.light_btn {
+  background-color: #FFF;
+  color: #414141;
+}
+
+.light_btn:hover, .light_btn:focus {
+  background-color: rgba(0, 0, 0, 0);
+  border: .2rem solid #FFF;
+  color: #FFF;
+  font-weight: bold;
+}
+
 .btn_sec {
   align-items: center;
+  /* border-radius: .4rem; */
   display: flex;
   flex-grow: 1;
-  height: 6.4rem;
+  height: 5.5rem;
   justify-content: center;
 }
 
@@ -264,7 +322,6 @@ strong{
 
 .btn_dbl {
   align-items: center;
-  color: #fff;
   display: flex;
   flex-grow: 1;
   height: 6.4rem;
@@ -699,20 +756,17 @@ padding: 0 6.4vw;
 
 .problem {
   background-color: #F2EFED;
-  text-align: center;
 }
 
 .prob_cont {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  grid-area: 1/3/1/11;
 }
 
 
  /**** Solution ****/
 
 .solution {
-  padding: 8.4vh 0 0 0;
+  padding-top: 7.2rem;
 }
 
 .solgrid {
@@ -759,7 +813,7 @@ padding: 0 6.4vw;
 
 .center {
   text-align: center;
-  margin-bottom: 4.8rem;
+  margin-bottom: 4rem;
 }
 
 .process_cont {
@@ -795,9 +849,15 @@ padding: 0 6.4vw;
   margin-bottom: 2rem;
 }
 
+.process_grid a {
+  color: #fff;
+}
+
 .rowvert {
   display: none;
 }
+
+
 
 
 /**** Research & Define ****/
@@ -816,7 +876,7 @@ padding: 0 6.4vw;
 .ur_img {
   background-image: url("../images/user_research_m.jpg");
   background-size: cover;
-  height: 12.8rem;
+  height: 30vh;
 }
 
 .ur_content, .results {
@@ -925,9 +985,10 @@ padding: 0 6.4vw;
 
 /**** Strategy ****/
 
+/** Personas **/
+
 .pers_cont {
-  background-color: #F2EFED;
-  padding-top: 4rem;
+
 }
 
 .persona {
@@ -941,18 +1002,20 @@ padding: 0 6.4vw;
   color: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 4rem 2.4rem;
+  padding: 4rem 6.4vw;
 }
 
 .per_shell {
   background-color: #fff;
+  border-left: .2rem solid #F2EFED;
+  border-right: .2rem solid #F2EFED;
   display: flex;
   justify-content: center;
-  padding: 0 2.4rem 4rem 2.4rem;
+  padding: 0 6.4vw 4rem 6.4vw;
 }
 
 .per_shell p {
-  max-width: 40rem;
+  max-width: 56rem;
 }
 
 .per_grid {
@@ -970,6 +1033,71 @@ padding: 0 6.4vw;
 .per_cont > h4 {
   color: #109AFE;
 }
+
+/** User Stories **/
+
+.user_story {
+  background-color: #414141;
+}
+
+.us_shell {
+  color: #fff;
+  margin-top: 0;
+  padding-top: 5.6rem;
+
+}
+
+.us_table_shell {
+  background-color: #414141;
+  padding: 0 0 6vh 0;
+}
+
+.us_table_shell h4 {
+  color: #fff;
+  margin-bottom: 4vh;
+  text-align: center;
+}
+
+.us_table_cont {
+  display: flex;
+  height: 40vh;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.us_table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.us_table th {
+  background-color: #109AFE;
+  color: #fff;
+  font-weight: bold;
+  padding: 1.5rem .8rem;
+}
+
+.us_table td {
+  padding: 1.5rem 1.6rem;
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: #F2EFED;
+}
+
+tr:nth-child(odd) td {
+  background-color: #FFF;
+}
+
+
+
+
+
+/**** Information Architecture ****/
+
+/** User Flow Grid **/
 
 .us_grid {
   background-color: #F2EFED;
@@ -999,9 +1127,7 @@ padding: 0 6.4vw;
   padding: .5rem 0;
 }
 
-
-
-/**** Information Architecture ****/
+/** User Flow Images **/
 
 .uf_img_cont {
   padding: 0 5%;
@@ -1018,13 +1144,91 @@ padding: 0 6.4vw;
   height: auto;
 }
 
+/** Wireframe images **/
+
+.wf_img_shell {
+  background-color: #109AFE;
+  padding: 4rem 0;
+}
+
+.wf_row1 {
+  padding: 0 0 1.8vh 0;
+}
+
+.wf_top_img {
+  background-image: url("../images/wire-sketch.jpg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 37vh;
+
+}
+
+.wf_bot_img {
+  background-image: url("../images/wire_dash.jpg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 39vh;
+}
+
+/** User testing **/
+
+.lf_task_shell {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4.8rem;
+}
+
+.lf_task {
+  align-items: center;
+  display: flex;
+  padding-bottom: 2.4rem;
+}
+
+.lf_cir {
+  border-radius: 50%;
+  height: 3.2rem;
+  text-align: center;
+  width: 3.2rem;
+}
+
+.cir1 {
+  background-color: #109AFE;
+  color: #fff;
+}
+
+.cir2 {
+  background-color: #F96D63;
+  color: #fff;
+}
+
+.cir3 {
+  background-color: #F6C548;
+  color: #414141;
+}
+
+.cir4 {
+  background-color: #CCE5E4;
+  color: #414141;
+}
+
+.lf_title {
+  padding-left: 1.2rem;
+
+}
+
+.lf_cir h4 {
+  line-height: 3rem;
+}
 
 .change-screen-cont {
   background: #414141;
 }
 
 .change-screen {
-  padding: .8rem 6.4vw 4.8rem 6.4vw;
+  padding: .8rem 6.4vw 2.4rem 6.4vw;
 }
 
 .lofi-orig {
@@ -1276,6 +1480,15 @@ padding: 0 6.4vw;
   margin-right: 1.2rem;
 }
 
+.ut_shell a {
+  color: #109AFE;
+}
+
+.ut_shell a:hover, .ut_shell a:focus {
+  font-weight: 700;
+}
+
+
 .hifi_img {
   background: url("../images/hifi.png");
   background-color: #109AFE;
@@ -1286,8 +1499,16 @@ padding: 0 6.4vw;
 
 }
 
+.hifi_one, .hifi_two {
+  padding-bottom: 6.4rem;
+}
+
 .change_shell {
   z-index: 2;
+}
+
+.change_title {
+  color: #109AFE;
 }
 
 .change_shell h4 {
@@ -1297,7 +1518,8 @@ padding: 0 6.4vw;
 
 .hifi-change-cont {
   background: #414141;
-  margin-bottom: 1.6rem;
+  border-bottom: .1rem solid #767273;
+  padding-bottom: 2.4rem;
 }
 
 .hifi-screen {
@@ -1344,9 +1566,15 @@ padding: 0 6.4vw;
 
 .img-descrip {
   align-items: center;
+  color: #fff;
   display: flex;
   flex-direction: column;
-  margin: 0 2.4rem 4rem 2.4rem;
+  margin: 0 2.4rem 0 2.4rem;
+}
+
+
+.conclusion {
+  padding-bottom: 5.6rem;
 }
 
 .concl_img_back {
@@ -1565,6 +1793,92 @@ padding: 0 6.4vw;
 }
 
 
+/********** Contact Page **********/
+.contact {
+  background-image: linear-gradient(#C4E0EC, #109AFE);
+  display: flex;
+  justify-content: center;
+  padding-top: 10.8vh;
+}
+
+.contact_intro {
+  background-color: #F2EFED;
+}
+
+.contact_inner {
+  padding: 6vh 6.4vw 0 6.4vw;
+}
+
+.cont_img_shell {
+  display: flex;
+  padding-bottom: 1.6rem;
+}
+
+.contact_img {
+  max-height: 9.6vh;
+}
+
+
+.contact_inner p {
+  max-width: 48rem;
+}
+
+.form_shell {
+}
+
+.contact_form {
+  background-color: #F2EFED;
+  margin: 0 auto;
+  padding: 2.4rem 6.4vw 6.4rem 6.4vw;
+  /* width: 40rem; */
+}
+
+.contact_form div + div {
+  margin-top: 2.4rem;
+}
+
+label {
+  display: inline-block;
+  font: 1.6rem 'lato', sans-serif;
+  line-height: 2.5rem;
+  padding-bottom: .8rem;
+  width: 9rem;
+  text-align: left;
+}
+
+input, textarea {
+  border: .1rem solid #C1BDBC;
+  color: #767273;
+  font: 1.6rem 'lato', sans-serif;
+  padding: 0 .8rem;
+  width: 100%;
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+input {
+  height: 4rem;
+}
+
+textarea {
+  vertical-align: top;
+  height: 9.6rem;
+}
+
+.form_btn {
+  margin-top: 1.6rem;
+  height: 6.4rem;
+  width: 100%;
+}
+
+
+
+
+
+
+
 /********** Footer  **********/
 
 .topft, .social, .copy {
@@ -1668,6 +1982,30 @@ padding: 0 6.4vw;
     grid-area: 1/5/1/6;
   }
 
+
+  /** Persona **/
+
+
+  /** User Story **/
+
+  .us_table {
+    max-width: 71.4rem;
+  }
+
+  /** Lo-fi User Testing **/
+
+
+  .lf_inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 6.4vw;
+  }
+
+  .lf_task {
+    width: 50%;
+    padding: 2.4rem 10vw;
+  }
 
 
   /** story **/
@@ -2078,10 +2416,14 @@ padding: 0 6.4vw;
     padding: 8.4vh 0;
   }
 
+
+
   /***** solution *****/
 
   .solution {
     grid-area: 4/1/4/13;
+    padding: 0;
+
   }
 
   .solgrid {
@@ -2127,14 +2469,14 @@ padding: 0 6.4vw;
     border-left: rgba(0,0,0,0);
   }
 
-  .process_grid div:nth-child(3n+2):nth-child(-n+13) {
+  .process_grid div:nth-child(3n+2):nth-child(-n+14) {
     align-items:baseline;
     display: flex;
     justify-content: flex-end;
     margin-top: 2.6rem;
   }
 
-  .process_grid div:nth-child(3n):nth-child(-n+13) {
+  .process_grid div:nth-child(3n):nth-child(-n+15) {
     margin: 2rem 0 0 0;
   }
 
@@ -2175,7 +2517,7 @@ padding: 0 6.4vw;
   }
 
   .pc3 {
-    grid-area: 4/6/4/8;
+    grid-area: 4/6/4/9;
   }
 
   .vert4 {
@@ -2370,50 +2712,60 @@ padding: 0 6.4vw;
     grid-area: 1/4/1/10;
   }
 
+  .per_shell {
+    align-items: center;
+    padding: 0 2.4rem 4rem 2.4rem;
+  }
+
   .pers_cont {
-    display: grid;
+    display: flex;
     grid-area: 2/1/2/13;
-    grid-column-gap: 1.2rem;
-    grid-template-columns: repeat(12, 1fr);
-    padding: 7.2rem 0;
+    padding: 0 9.2vw;
+  }
+
+  .per_h_left {
+    border-right: .2rem solid #FFF;
+  }
+
+  .per_right {
+    border-left: none;
   }
 
   .persona {
     padding-bottom: 0;
   }
 
-  .pers_two {
-    grid-area: 1/7/1/12;
-  }
-
-  .pers_one {
-    grid-area: 1/2/1/7;
-  }
 
   /** user stories **/
 
   .user_story {
     display: grid;
-    grid-area: 3/2/3/12;
+    grid-area: 3/1/3/13;
     grid-column-gap: 1.2rem;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    margin: 7.2rem 0;
   }
 
   .us_shell {
-    grid-area: 1/3/1/9;
+    grid-area: 1/2/1/6;
   }
 
-  .us_grid {
-    grid-area: 2/1/2/11;
-    grid-column-gap: 1.2rem;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 6vh 6.4vw;
-    text-align: center;
+  .us_table_shell {
+    display: flex;
+    flex-direction: column;
+    grid-area: 1/7/1/12;
+    justify-content: center;
   }
 
-  .usc {
-    margin-bottom: 0;
+  .us_table_cont {
+    height: 42vh;
   }
+
+
+  .us_table {
+    max-width: 100%;
+  }
+
 
   /***** information architecture *****/
 
@@ -2428,15 +2780,28 @@ padding: 0 6.4vw;
   }
 
   .user_flows {
-    grid-area: 2/3/2/11;
+    grid-area: 3/3/3/11;
   }
 
-  /** wireframes & testing **/
+  .us_grid {
+    grid-area: 2/2/2/12;
+    grid-column-gap: 1.2rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 6vh 6.4vw;
+    text-align: center;
+  }
+
+  .usc {
+    margin-bottom: 0;
+  }
+
+
+  /** wireframes & prototyping **/
 
   .wireframe {
     background: #F2EFED;
     display: grid;
-    grid-area: 3/2/3/12;
+    grid-area: 4/2/4/12;
     grid-column-gap: 1.2rem;
     grid-template-columns: repeat(10, 1fr);
     margin-bottom: 7.2rem;
@@ -2448,13 +2813,49 @@ padding: 0 6.4vw;
     justify-content: center;
   }
 
-  .lofi_changes {
+  .wf_img_shell {
     grid-area: 1/7/1/11;
+    padding: 4rem 2vw;
   }
 
-  .change-screen {
-    padding: 0 2vw;
+  .wf_top_img {
+    min-height: 32vh;
   }
+
+  .wf_bot_img {
+    min-height: 33vh;
+  }
+
+  /** Lo-fi User Testing **/
+
+ .wf_testing {
+   grid-area: 5/4/5/10;
+ }
+
+ .lf_task_shell {
+   display: flex;
+   flex-wrap: nowrap;
+   grid-area: 6/3/6/11;
+ }
+
+ .lf_inner {
+   padding: 0;
+   width: 100%;
+ }
+
+ .lf_task {
+   width: 25%;
+   padding: 2.4rem .8rem;
+ }
+
+ .lofi_changes {
+   grid-area: 7/1/7/13;
+ }
+
+ .change-screen {
+   padding: 0 2vw;
+ }
+
 
   /***** brand *****/
 
@@ -2573,6 +2974,7 @@ padding: 0 6.4vw;
 
   .hifi_one {
     grid-area: 2/1/2/13;
+    margin-bottom: 6.4rem;
   }
 
   .change_title {
@@ -2587,13 +2989,17 @@ padding: 0 6.4vw;
     grid-area: 2/7/2/13;
   }
 
-  .change-screen {
+  .change_shell {
     border-left: .1rem solid #767273;
+  }
+
+  .change-screen {
     min-height: 45vh;
     padding: .8rem 2vw 5.6rem 2vw;
   }
 
   .hifi-change-cont {
+    border-bottom: none;
     margin-bottom: 0;
   }
 
@@ -2618,7 +3024,10 @@ padding: 0 6.4vw;
   }
 
   .img-descrip {
-    margin: 1.6rem 0 4.8rem 0;
+    margin: 0 8.5vw 1.5rem 8.5vw;
+  }
+
+  .img_descrip p {
   }
 
   .desc_bfr {
@@ -2691,9 +3100,21 @@ padding: 0 6.4vw;
     min-height: 65rem;
   }
 
-  .concl_shell {
-    grid-area: 2/4/2/10;
+  .concl {
+    grid-area: 2/1/2/13;
   }
+
+  .four {
+    grid-area: 1/2/1/4;
+  }
+
+  .concl_shell {
+    grid-area: 1/4/1/10;
+  }
+
+
+
+
 
 
   /**********     About Page      **********/
@@ -2828,6 +3249,38 @@ padding: 0 6.4vw;
       margin-right: 1.2rem;
     }
 
+  /**********     Contact Page     **********/
+  .contact {
+    padding: 18.2vh 8.4vw 7.4vh 8.4vw;
+  }
+
+  .contact_intro {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+  }
+
+  .contact_inner {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vh 6.4vw 4vh 6.4vw;
+  }
+
+  .contact_img {
+    max-height: 12.6vh;
+  }
+
+
+  .form_shell {
+    background-color: #F2EFED;
+    padding: 4rem 0;
+  }
+
+  .contact_form {
+    padding: 4rem 5vw;
+  }
 
   /**********     Footer      **********/
 
