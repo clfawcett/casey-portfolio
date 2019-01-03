@@ -2108,7 +2108,7 @@ textarea {
   /********** ABOUT PAGE **********/
 
   .about_img {
-    width: 70%;
+    width: 60%;
   }
 
 
@@ -2311,7 +2311,7 @@ textarea {
     }
 
   .ftimg {
-    width: 70%;
+    width: 100%;
   }
 
   .btn_shell_proj {
@@ -2354,21 +2354,6 @@ textarea {
   .btn_shell_feat, .btn_shell_proj {
     width: 100%;
   }
-
-  /* .gradient {
-    background-image: linear-gradient(#BBDCE5, #109AFE);
-    grid-area: 1/6/1/12;
-    min-height: 43.3vh;
-    z-index: 2;
-  }
-
-  .btn_shell_feat {
-    display: flex;
-    grid-area: 2/10/2/13;
-    justify-content: flex-end;
-    top: -4vh;
-    z-index: 3;
-  } */
 
   .feat_proj_bk {
     background: #fff;
