@@ -668,25 +668,6 @@ padding: 0 6.4vw;
   z-index: 2;
 }
 
-
-
-/* .gradient {
-  background-image: linear-gradient(#BBDCE5, #109AFE);
-  grid-area: 1/1/1/7;
-  min-height: 32.6rem;
-  position: relative;
-}
-
-
-.proj_img {
-  background-image: url("../images/ideabase_hero_big.png");
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  min-height: 32.6rem;
-  z-index: 2;
-} */
-
 .project {
   opacity: 0;
   transform: translateY(50px);
@@ -695,6 +676,7 @@ padding: 0 6.4vw;
 
 .btn_shell_feat {
   padding-top: 2rem;
+  max-width: 35.1rem;
 }
 
 .project.fade-in {
@@ -1678,6 +1660,10 @@ tr:nth-child(odd) td {
     z-index: 2;
 }
 
+.btn_shell_about {
+  max-width: 35.1rem;
+}
+
 .about_background {
   /* background: #414141; */
   grid-area: 1/2/2/7;
@@ -2300,7 +2286,6 @@ textarea {
     }
 
   .ftimg {
-    vertical-align: middle;
     width: 100%;
   }
 
@@ -3202,17 +3187,6 @@ textarea {
     }
 
 
-    /* .portf_img {
-      background-image: url("../images/casey_fawcett.jpg");
-      background-size: cover;
-      background-position: center top;
-      background-repeat: no-repeat;
-      height: 60vh;
-      width: 100%;
-      z-index: 2;
-    } */
-
-
     /***** The Beginning *****/
 
     .beginning {
@@ -3250,13 +3224,6 @@ textarea {
       grid-area: 1/4/1/10;
       padding: 4rem 0;
     }
-
-
-
-    /* .ab_quote {
-      background: #F2EFED;
-      grid-area: 2/1/2/13;
-    } */
 
 
     /***** Changing Direction *****/
@@ -3395,7 +3362,5 @@ textarea {
     width: 70%;
   }
 
-  .btn_shell_about {
-    max-width: 31.2rem;
-  }
+
 }
