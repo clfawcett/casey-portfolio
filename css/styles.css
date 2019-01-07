@@ -1,12 +1,13 @@
 /*** Color List
-dark #414141
+dark #414141 #2e2e2e
 dark gray #767273
 medium gray #C1BDBC
 background lt gray #F2EFED
-primary #3DA79A
+primary #3DA79A #008080
 accent blue #109AFE
 accent red #F96D63
 accent yellow #F6C548
+accent light_primary #A9DED7
 ***/
 
 
@@ -108,7 +109,7 @@ p{
 
 a {
   color: #414141;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-decoration: none;
 }
 
@@ -170,14 +171,14 @@ li p {
   border: none;
   color: #414141;
   font-family: 'lato', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   line-height: 2.5rem;
   text-align: center;
 }
 
 
 .description strong {
-  color: #239588;
+  color: #3DA79A;
 }
 
 .logotype {
@@ -221,7 +222,7 @@ li p {
 }
 
 .in_link:hover, .in_link:focus {
-  color: #3DA79A;
+  color: #008080;
 }
 
 
@@ -236,7 +237,7 @@ li p {
 }
 
 .h_menu_btn:hover, .h_menu_btn:focus {
-  color: #3DA79A;
+  color: #008080;
 }
 
 .nav_menu_btn {
@@ -245,7 +246,7 @@ li p {
 }
 
 .nav_menu_btn:hover, .nav_menu_btn:focus {
-  color: #3DA79A;
+  color: #008080;
 }
 
 .closebtn {
@@ -278,8 +279,13 @@ li p {
 }
 
 .primary_btn {
-  background: #3DA79A;
+  background: #008080;
   color: #FFF;
+}
+
+.light_btn {
+  background: #fff;
+  color: #414141;
 }
 
 .primary_btn:hover, .primary_btn:focus {
@@ -448,6 +454,7 @@ nav a {
   padding: 0 6.4vw;
 }
 
+
 #pagenav {
   position: fixed;
   top:0;
@@ -468,7 +475,7 @@ nav a {
 .menu_navbar {
 align-items: center;
 display: flex;
-height: 6.4vh;
+height: 10.8vh;
 justify-content: space-between;
 padding: 0 6.4vw;
 }
@@ -486,7 +493,7 @@ padding: 0 6.4vw;
 }
 
 .menu_content {
-  color: #fff;
+  color: #414141;
 }
 
 #close_nav {
@@ -506,6 +513,10 @@ padding: 0 6.4vw;
 }
 
 .menu_nav_links a:hover {
+  color: #A9DED7;
+}
+
+.active {
   color: #3DA79A;
 }
 
@@ -528,7 +539,7 @@ padding: 0 6.4vw;
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 5.6rem 2.4rem 4rem 2.4rem;
+  margin: 5.6rem 6.4vw 4rem 6.4vw;
 }
 
 .btn_shell {
@@ -1628,7 +1639,6 @@ tr:nth-child(odd) td {
 
 .ab_lesson {
   background-color: #F2EFED;
-  /* color: #fff; */
   padding: 4rem 6.4vw;
 }
 
@@ -2086,6 +2096,13 @@ textarea {
     width: 60%;
   }
 
+  .ab_lesson {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 7.2vw;
+  }
+
 
 @media screen and (min-width: 1025px) {
 
@@ -2237,7 +2254,8 @@ textarea {
 
   .sub_sec {
     align-items: flex-start;
-    margin: 7.2rem 0 4.8rem 0;
+    margin: 0;
+    padding: 7.2rem 0 4.8rem 0;
   }
 
   .grid {
@@ -3145,13 +3163,10 @@ textarea {
 
   /**********     About Page      **********/
 
-  .hero2 {
-    margin-bottom: 7.2rem;
-  }
 
-.hero_image_cont {
-  grid-area: 1/7/1/12;
-}
+  .hero_image_cont {
+    grid-area: 1/7/1/12;
+  }
 
   .about_bg {
     height: 100%;
