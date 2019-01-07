@@ -279,7 +279,7 @@ li p {
 }
 
 .primary_btn {
-  background: #008080;
+  background: #3DA79A;
   color: #FFF;
 }
 
@@ -1956,7 +1956,7 @@ textarea {
   /** header **/
 
   .hero2 {
-    padding: 0 6.4vw 6.4rem 6.4vw;
+    padding: 0 6.4vw 0 6.4vw;
   }
 
   .hero_image_cont {
@@ -2388,7 +2388,7 @@ textarea {
 
   .overview {
     grid-area: 2/1/2/13;
-    padding: 0 0 8vh 0;
+    padding: 8vh 0;
   }
 
   .over_cont {
